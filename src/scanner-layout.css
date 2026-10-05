@@ -148,3 +148,6 @@
 .scan-input-warning p { margin: 0 0 6px; font-size: 12px; line-height: 1.45; }
 .scan-input-warning small { display: block; font-size: 11px; line-height: 1.4; }
 .scan-input-warning button { margin-top: 8px; font-size: 12px; }
+
+.scanner-auto-option { display: flex; align-items: center; gap: 7px; margin: 8px 0; font-size: 11px; line-height: 1.4; cursor: pointer; }
+.scanner-auto-option input { width: 15px; height: 15px; flex-shrink: 0; margin: 0; }

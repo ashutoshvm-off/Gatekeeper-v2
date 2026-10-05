@@ -70,6 +70,33 @@ test('joined scans cannot enter the queue; Enter and Tab rapid taps retain indiv
     const rows=store.db.prepare('SELECT member_id,direction FROM events ORDER BY seq').all();
     assert.ok(rows.slice(4).every((r,i)=>r.member_id==='24BCS031'&&r.direction===(i%2?'IN':'OUT')));
     assert.ok(rows.every(r=>r.member_id!=='24BCS03124BCS031'));
+    // No-suffix mode is opt-in: default keyboard bursts must wait for Enter.
+    await input.pressSequentially('24BCS031',{delay:5});
+    await page.waitForTimeout(400);assert.equal(count(),54);await expect(input).toHaveValue('24BCS031');
+    await input.press('Enter');await expect.poll(count).toBe(55);
+    await page.getByLabel('Auto-submit fast scans (reader has no Enter/Tab)').check();
+    await input.pressSequentially('24BCS031',{delay:5});
+    await expect.poll(count).toBe(56);await expect(input).toHaveValue('');
+    // Suffix arriving before the idle deadline cannot create a second tap.
+    await input.pressSequentially('24BCS031',{delay:5});await input.press('Enter');
+    await expect.poll(count).toBe(57);await page.waitForTimeout(400);assert.equal(count(),57);
+    // Slow manual entry and short codes are never auto-submitted.
+    await input.pressSequentially('24BCS031',{delay:85});
+    await page.waitForTimeout(400);assert.equal(count(),57);await expect(input).toHaveValue('24BCS031');
+    await input.press('Enter');await expect.poll(count).toBe(58);
+    await input.pressSequentially('ABC',{delay:5});await page.waitForTimeout(400);
+    assert.equal(count(),58);await input.fill('');
+    await input.pressSequentially('24BCS03124BCS031',{delay:5});
+    await expect(page.getByRole('alert')).toContainText('Nothing was queued');assert.equal(count(),58);
+    await page.keyboard.type('24BCS031',{delay:5});await expect.poll(count).toBe(59);
+    await input.pressSequentially('24BCS031',{delay:5});
+    // Leaving the field cancels auto-submit; text stays available for manual submission.
+    await page.getByRole('button',{name:'Retry sync now'}).focus();await page.waitForTimeout(400);
+    assert.equal(count(),59);await expect(input).toHaveValue('24BCS031');
+    await input.press('Enter');await expect.poll(count).toBe(60);
+    await page.reload();await expect(input).toBeVisible();
+    await expect(page.getByLabel('Auto-submit fast scans (reader has no Enter/Tab)')).toBeChecked();
+    await page.screenshot({path:'test-results/scanner-auto-submit.png',fullPage:true});
     assert.deepEqual(errors,[]);
   }finally{await browser?.close();await new Promise(resolve=>server.close(resolve));store.close();rmSync(dir,{recursive:true,force:true});}
 });
