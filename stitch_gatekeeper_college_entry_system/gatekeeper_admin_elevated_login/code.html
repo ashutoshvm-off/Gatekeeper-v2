@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#b6c6f1","on-surface-variant":"#45464e","on-background":"#0b1c30","surface-container-low":"#eff4ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#001d31","on-tertiary-fixed-variant":"#004b73","outline-variant":"#c5c6cf","on-primary-container":"#7988b0","primary-fixed":"#d9e2ff","outline":"#75777f","on-primary":"#ffffff","on-surface":"#0b1c30","inverse-surface":"#213145","primary-fixed-dim":"#b6c6f1","on-secondary-container":"#663500","on-tertiary":"#ffffff","secondary":"#904d00","on-secondary":"#ffffff","error":"#ba1a1a","on-tertiary-container":"#228fd3","tertiary":"#000b16","primary-container":"#0f2042","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","on-secondary-fixed":"#2f1500","surface-container-high":"#dce9ff","on-error":"#ffffff","tertiary-container":"#00233a","on-primary-fixed":"#081a3c","secondary-container":"#fe932c","surface-dim":"#cbdbf5","primary":"#000922","surface-container":"#e5eeff","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#6e3900","surface-tint":"#4f5e83","secondary-fixed":"#ffdcc3","tertiary-fixed":"#cce5ff","on-primary-fixed-variant":"#37466a","error-container":"#ffdad6","secondary-fixed-dim":"#ffb77d","background":"#f8f9ff","tertiary-fixed-dim":"#93ccff","surface-bright":"#f8f9ff","surface-variant":"#d3e4fe","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2rem","space-lg":"1.5rem","margin-tablet":"1.5rem","space-md":"1rem","margin":"1rem","gutter":"1rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","margin-desktop":"2rem","space-xs":"0.25rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"hud-metric":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["JetBrains Mono"],"body-lg":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"hud-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><main class="min-h-screen w-full flex items-center justify-center p-space-md bg-background"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden rounded-xl bg-primary shadow-xl text-on-primary">
+<!-- Ambient Structural Grid and Glow Elements -->
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#d9e2ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary opacity-15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary-container opacity-10 blur-3xl pointer-events-none"></div>
+<!-- Header Telemetry Bar -->
+<div class="relative w-full bg-tertiary-container px-space-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2.5 w-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">ASIET CLASSIFIED NODE // PERIMETER SEC-NET</span>
+<span class="font-label-sm text-label-sm text-outline-variant">|</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">VLAN 100 [ADMIN-CORE]</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-outline-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-secondary-container">shield_locked</span>
+          ZERO-TRUST ENCLAVE ACTIVE
+        </span>
+<div class="bg-primary px-space-sm py-0.5 rounded font-label-sm text-label-sm text-primary-fixed">
+          AUTH-LEVEL: TIER 5
+        </div>
+</div>
+</div>
+<!-- Main Container Bento Structure -->
+<div class="relative p-space-md lg:p-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-stretch">
+<!-- Left Panel: Institutional Authority & Prestige Backdrop -->
+<div class="lg:col-span-5 flex flex-col justify-between rounded-xl bg-primary-container p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" data-alt="Architectural photo of Adi Shankara Institute of Engineering &amp; Technology main administrative academic building Kerala featuring grand stone pillars, palm trees, blue sky, high-tech academic security ambiance in deep navy and gold tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDStqXoigALdOiPB7JD9hYIQWPyzsLlnTZZIgP0CA1bKCloVqtEd1uK5Gx6p4BDQxA2ixGl4nCLPI3G13VmAN0VpwKSwX80tAQ7ESJrcK6poCHVWE1HRZCla3JMXbe5kl0ar_q6KiAcn3yWa9WPCt0zv6qKdseJbnogwQrlZEfdkT2IwfKWuJ6VycA0PpPhwuxXVsVHYmjpwesCB1ZwVjRgOrn2Hs0th0ke5BmDIva3putiHyowxZJA')"></div>
+<div class="absolute top-0 right-0 w-48 h-48 bg-secondary opacity-10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Official Seal Badge Presentation -->
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 shrink-0 rounded-full bg-tertiary-container p-1 shadow-lg">
+<img alt="ASIET Gatekeeper Seal Badge" class="w-full h-full object-contain rounded-full shadow-inner" src="https://lh3.googleusercontent.com/aida/AEtjO1VJCWMLnoc8p9PHJv3BnmA7lQS28XJcfS4zVMfERXUg71fPzWh4Cc9imVIa10DvMODaXd-O3qT3lsR3b9Cnm5F_mUxWGXMXDmT19SgEYJHr0EyJgjfqnMl-G6t5ZFix2zZ6ZjKSpjbvvYBdABzUeUBODjWm0rAt4XGP8bS3fTjX-97KTRH4ikzaBEhwj-69Gr9nZvirXsRdhmC5XwJ9iLKxipA4YKm6zWWC7nLARGIzC-jx0xCD6VyXt2c"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Adi Shankara Trust</span>
+<span class="font-headline-md text-headline-md text-on-primary leading-tight font-semibold">ASIET Gatekeeper</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Kalady, Kerala • Established 2001</span>
+</div>
+</div>
+<div class="pt-space-md">
+<div class="inline-block bg-tertiary px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary-container uppercase mb-space-xs font-semibold tracking-wider">
+              High-Assurance Portal
+            </div>
+<h1 class="font-headline-lg text-headline-lg text-on-primary font-bold">
+              Elevated Admin Console
+            </h1>
+<p class="font-body-md text-body-md text-surface-container-high mt-space-xs leading-relaxed">
+              Centralized Tier-5 identity management, biometric registry calibration, and campus-wide perimeter override console for Adi Shankara Institute of Engineering &amp; Technology.
+            </p>
+</div>
+<!-- Institutional Governance Specifications Card -->
+<div class="mt-space-md rounded-lg bg-surface-container-high/10 p-space-md backdrop-blur-sm shadow-inner flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">Compliance Protocol</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold">KTU-SEC-VER-24.8</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">Audit Standard</span>
+<span class="font-label-sm text-label-sm text-on-primary">SHA-256 Ledger Synchronized</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">Security Zone</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Kalady Main Terminal #01</span>
+</div>
+</div>
+</div>
+<!-- Left Column Lower Status & Quick Jump -->
+<div class="relative z-10 pt-space-lg flex flex-col gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-low/5 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">sensors</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">RFID &amp; OCR Live Feed</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary px-2 py-0.5 rounded text-on-secondary font-semibold">100% ONLINE</span>
+</div>
+<a class="group flex items-center justify-between px-space-md py-space-sm rounded bg-tertiary hover:bg-tertiary/80 transition-colors duration-150" href="#guard-checkpoint">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary-fixed text-lg">sync_alt</span>
+<span class="font-body-sm text-body-sm text-surface-container-high group-hover:text-on-primary">Need standard verification?</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-container group-hover:underline">Guard Checkpoint →</span>
+</a>
+</div>
+</div>
+<!-- Right Panel: Elevated Authentication HUD Card -->
+<div class="lg:col-span-7 flex flex-col justify-between rounded-xl bg-surface-container-lowest text-on-surface p-space-lg shadow-xl relative">
+<!-- Top Security Notice Banner -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="rounded-lg bg-surface-container-high p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary font-bold tracking-wide uppercase">Restricted Tier-5 Access Matrix</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Authorized Administrative &amp; Chief Security Marshals only. All transactions are cryptographically signed, timestamped, and mirrored to the institutional registrar vault.
+              </p>
+</div>
+</div>
+</div>
+<!-- Authentication Form -->
+<form class="flex flex-col gap-space-md" id="admin-auth-form" onsubmit="event.preventDefault(); triggerAuth();">
+<!-- Division Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="admin-division">
+<span>1. Governance Division / Clearance Scope</span>
+<span class="text-secondary font-semibold">REQUIRED</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-space-md py-space-sm focus:outline-none focus:bg-surface-container shadow-sm cursor-pointer pr-10" id="admin-division">
+<option value="registrar">Academic Administration &amp; Registrar Enclave</option>
+<option value="soc">Security Operations Center (SOC) Master Dispatch</option>
+<option value="library">Library &amp; Digital Privileges Directorate</option>
+<option value="warden">Chief Warden &amp; Campus Residential Registry</option>
+<option value="it_director">IT Directorate &amp; Identity Root CA</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-space-md text-on-surface-variant">
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Two Column Credential Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Staff ID / KTU ID -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xs" for="admin-id">
+<span>2. Admin Key / Staff ID</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-sm text-outline text-lg">badge</span>
+<input class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md pl-10 pr-space-md py-space-sm rounded-lg focus:outline-none focus:bg-surface-container shadow-sm" id="admin-id" name="adminId" placeholder="ADM-ASIET-001 or ktu.root" required="" type="text" value="ADM-ASIET-001"/>
+</div>
+</div>
+<!-- Master Security Passkey -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="admin-token">
+<span>3. Master Passkey / RSA</span>
+<button class="text-secondary hover:underline font-label-sm text-label-sm" onclick="togglePassVisibility()" type="button">Toggle</button>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-sm text-outline text-lg">password</span>
+<input class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md pl-10 pr-space-md py-space-sm rounded-lg focus:outline-none focus:bg-surface-container shadow-sm tracking-widest" id="admin-token" name="adminToken" placeholder="••••••••••••••••" required="" type="password" value="AdminPassphrase99#"/>
+</div>
+</div>
+</div>
+<!-- Multi-Factor / Hardware FIDO2 + TOTP Box -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-lg">usb</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider">4. Hardware FIDO2 / 6-Digit TOTP Token</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-space-xs">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+                Hardware Slot Ready
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tap your registered YubiKey Security key or input the synchronous 6-digit one-time passcode generated by your Authenticator app.
+            </p>
+<!-- 6 Digit Input Group -->
+<div class="flex items-center justify-between gap-space-xs max-w-sm mx-auto w-full pt-space-xs">
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 1)" type="text" value="7"/>
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 2)" type="text" value="4"/>
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 3)" type="text" value="9"/>
+<span class="font-hud-metric text-hud-metric text-outline-variant">-</span>
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 4)" type="text" value="0"/>
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 5)" type="text" value="8"/>
+<input class="totp-input w-11 h-12 text-center font-hud-metric text-hud-metric bg-surface-container-lowest rounded-lg shadow-sm text-on-surface focus:outline-none focus:bg-surface-container" maxlength="1" onkeyup="handleTotp(this, 6)" type="text" value="2"/>
+</div>
+</div>
+<!-- Action Submission Row -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full py-space-sm px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-headline-md text-headline-md font-semibold flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99] cursor-pointer" id="submit-auth-btn" type="submit">
+<span class="material-symbols-outlined text-secondary-container">lock_open</span>
+<span id="btn-text">Authenticate &amp; Enter Admin Console</span>
+</button>
+<!-- Verification Progress Bar (Animated on trigger) -->
+<div class="hidden w-full flex-col gap-1" id="auth-progress-box">
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-0 transition-all duration-300" id="auth-progress-bar"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary text-center" id="auth-status-text">Validating KTU Master Signature...</span>
+</div>
+<!-- Alternate Support and Links -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<a class="font-body-sm text-body-sm text-secondary hover:underline flex items-center gap-space-xs" href="#request-credentials">
+<span class="material-symbols-outlined text-sm">support_agent</span>
+<span>Request Elevated Credentials (IT Directorate)</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">encrypted</span>
+                TLS 1.3 / AES-256 GCM
+              </span>
+</div>
+</div>
+</form>
+<!-- Dynamic Success Toast / Simulation Output -->
+<div class="hidden mt-space-md p-space-md rounded-lg bg-tertiary text-on-tertiary flex items-center justify-between animate-fade-in shadow-xl" id="auth-toast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-2xl">verified</span>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-primary">Clearance Granted</div>
+<div class="font-body-sm text-body-sm text-surface-container-high">Session established for Staff ID: ADM-ASIET-001. Redirecting to Root Console...</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary-fixed">TOKEN_OK</span>
+</div>
+</div>
+</div>
+<!-- Security Audit Matrix & Telemetry Footer -->
+<div class="relative bg-surface-container-lowest/10 backdrop-blur-md px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left Telemetry Cluster -->
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Terminal Host IP</span>
+<span class="font-hud-metric text-label-md text-primary-fixed">172.16.4.12 [Mattoor Core]</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Replication Node</span>
+<span class="font-hud-metric text-label-md text-primary-fixed">Primary Data Vault (Server-01)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Cryptographic Hash</span>
+<span class="font-hud-metric text-label-md text-secondary-container">SHA256: 4e9f...81c2</span>
+</div>
+</div>
+<!-- Right Policy & Status Cluster -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-tertiary px-space-md py-1.5 rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-secondary-container text-base">timer</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">Session Idle Timeout: 15 Minutes Policy</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-primary-fixed-dim font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>ISO 27001 Certified Campus</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Simulation Script -->
+<script>
+    function togglePassVisibility() {
+      const field = document.getElementById('admin-token');
+      if (field.type === 'password') {
+        field.type = 'text';
+      } else {
+        field.type = 'password';
+      }
+    }
+
+    function handleTotp(input, index) {
+      if (input.value.length === 1) {
+        const next = input.nextElementSibling;
+        if (next && next.classList.contains('totp-input')) {
+          next.focus();
+          next.select();
+        } else if (next && next.nextElementSibling && next.nextElementSibling.classList.contains('totp-input')) {
+          next.nextElementSibling.focus();
+          next.nextElementSibling.select();
+        }
+      }
+    }
+
+    function triggerAuth() {
+      const btn = document.getElementById('submit-auth-btn');
+      const btnText = document.getElementById('btn-text');
+      const progressBox = document.getElementById('auth-progress-box');
+      const progressBar = document.getElementById('auth-progress-bar');
+      const statusText = document.getElementById('auth-status-text');
+      const toast = document.getElementById('auth-toast');
+
+      btn.disabled = true;
+      btn.classList.add('opacity-75');
+      btnText.textContent = 'Verifying Administrative Signature...';
+      progressBox.classList.remove('hidden');
+      progressBox.classList.add('flex');
+
+      progressBar.style.width = '35%';
+      statusText.textContent = 'Handshaking FIDO2 Hardware Token...';
+
+      setTimeout(() => {
+        progressBar.style.width = '70%';
+        statusText.textContent = 'Querying KTU Governance Ledger...';
+      }, 500);
+
+      setTimeout(() => {
+        progressBar.style.width = '100%';
+        statusText.textContent = 'Authorization Confirmed. Access Granted.';
+        toast.classList.remove('hidden');
+        btnText.textContent = 'Session Established';
+      }, 1100);
+    }
+  </script>
+</div></main></body></html>

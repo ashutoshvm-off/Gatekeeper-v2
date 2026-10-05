@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#b6c6f1","on-secondary-fixed":"#2f1500","secondary-container":"#fe932c","surface":"#f8f9ff","secondary":"#904d00","on-primary":"#ffffff","on-error":"#ffffff","tertiary-container":"#00233a","surface-container-lowest":"#ffffff","primary-container":"#0f2042","on-tertiary-container":"#228fd3","background":"#f8f9ff","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-primary-container":"#7988b0","on-tertiary-fixed":"#001d31","outline-variant":"#c5c6cf","on-error-container":"#93000a","on-surface-variant":"#45464e","primary":"#000922","inverse-on-surface":"#eaf1ff","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","on-secondary":"#ffffff","surface-dim":"#cbdbf5","on-secondary-container":"#663500","outline":"#75777f","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","on-primary-fixed":"#081a3c","primary-fixed":"#d9e2ff","secondary-fixed-dim":"#ffb77d","surface-container":"#e5eeff","surface-variant":"#d3e4fe","surface-tint":"#4f5e83","error":"#ba1a1a","inverse-primary":"#b6c6f1","surface-container-high":"#dce9ff","inverse-surface":"#213145","tertiary":"#000b16","secondary-fixed":"#ffdcc3","on-secondary-fixed-variant":"#6e3900","on-background":"#0b1c30","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#37466a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-tablet":"1rem","gutter":"1rem","margin-tablet":"1.5rem","space-xl":"2rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"1rem","space-sm":"0.5rem"},"fontFamily":{"hud-metric":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"label-md":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"hud-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="ASIET Gatekeeper Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt4FVLC0rErGqoaLFv0p6-fm3oVNCm7zDEGssvrCjZ--Gu_1hXliBRGmZKyugDt_kTSUUu9XEcX-OamUAJ3rJQd4viswmEePdIE-qzQZHvMXlruVwFpFiD-VdVvNOrQhDKY6coyfOFb2op10sPP3zbnHARvOI3GdguwtWMyzTD1LTQu810FuhVit9uXF5BMIzAQUyXf8D32dv4Y8lCno6SMlyOBxoOR6U_oGed280c4F73UKhsKHOt"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-white">Adi Shankara Institute of Engineering &amp; Technology</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Gatekeeper | Campus Security &amp; Access Control System</span></div><div class="hidden xl:flex items-center gap-space-xs ml-space-lg px-space-sm py-1 bg-tertiary-container rounded border border-outline/30"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-tertiary-fixed">Gate 01 - Main Archway • ACTIVE</span></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-sm py-1 bg-tertiary-container/60 rounded"><span class="material-symbols-outlined text-[16px] text-on-primary-container">schedule</span><span class="font-hud-metric text-label-md text-on-primary-container">IST 09:42:18 AM</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden lg:flex items-center gap-space-xs bg-primary/40 p-1 rounded" data-active-classes="bg-surface-container-lowest text-primary font-label-md font-bold rounded shadow-sm"><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="barcode-scanner" href="#">Barcode Scanner</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-surface-container-lowest text-primary font-label-md font-bold rounded shadow-sm" data-path="access-logs" href="#">Access Logs</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="data-management" href="#">Data Management</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="faculty-privileges" href="#">Faculty Privileges</a></nav><div class="flex items-center gap-space-md pl-space-md border-l border-outline/20"><div class="flex flex-col text-right hidden md:block"><span class="font-label-md text-label-md text-white font-semibold">Officer K. Rajesh</span><span class="font-label-sm text-label-sm text-on-primary-container">Chief Warden / Gate 1</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><a class="p-1.5 text-on-primary-container hover:bg-surface-container-high hover:text-on-surface rounded transition-colors flex items-center" data-path="sign-out" href="#" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-lg">
+<!-- Top Telemetry & Page Header Banner -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Security Operations Center • Real-Time Telemetry Stream</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Campus Access Logs &amp; Real-Time In/Out Records</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Monitoring all gate checkpoint entries, exits, and transit timestamps across ASIET campus perimeters.</p>
+</div>
+<!-- Live Sync Status Chip -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-xl self-start lg:self-auto shadow-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Stream Status</span>
+<span class="font-hud-metric text-label-md text-on-surface">SYNCHRONIZED (0.2s)</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+</div>
+</div>
+<!-- Top Stat HUD KPI Cards (Bento Style) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1: Total Footfall -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Total Campus Footfall Today</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-md">
+<span class="font-hud-metric text-hud-metric text-on-surface">2,845</span>
+<span class="flex items-center font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% vs y'day
+          </span>
+</div>
+<!-- Micro sparkline visualization -->
+<div class="w-full mt-space-sm pt-space-xs flex items-end gap-1 h-6">
+<div class="flex-1 bg-surface-container-high rounded-t h-2"></div>
+<div class="flex-1 bg-surface-container-high rounded-t h-3"></div>
+<div class="flex-1 bg-surface-container-high rounded-t h-3"></div>
+<div class="flex-1 bg-surface-container-high rounded-t h-4"></div>
+<div class="flex-1 bg-surface-container-high rounded-t h-5"></div>
+<div class="flex-1 bg-secondary-container rounded-t h-6"></div>
+</div>
+</div>
+<!-- Metric 2: Currently On Campus (Students) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Currently On Campus (Students)</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-md">
+<span class="font-hud-metric text-hud-metric text-on-surface">1,920</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 2,400 max cap</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Metric 3: Faculty & Staff -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Faculty &amp; Staff On Campus</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-md">
+<span class="font-hud-metric text-hud-metric text-on-surface">218</span>
+<span class="flex items-center font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1"></span> 91% Dept Attendance
+          </span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 91%"></div>
+</div>
+</div>
+<!-- Metric 4: Total Exits -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Total Exits Logged</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">output</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-md">
+<span class="font-hud-metric text-hud-metric text-on-surface">707</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last at 09:41:22 AM</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Turnstile Gates 1-4 Balanced
+        </div>
+</div>
+</div>
+<!-- Filter & Export Toolbar Container -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Top Row: Interactive Search and Primary Exports -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Live Search Bar -->
+<div class="relative flex-1 max-w-2xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-10 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg placeholder-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container shadow-inner" id="searchInput" placeholder="Search by Name, Roll No, Department, or Barcode ID (e.g., ASI22CS084)..." type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<span class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">⌘K</span>
+</div>
+</div>
+<!-- Action Export Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<!-- Primary: Excel / CSV -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-primary-container text-on-primary font-label-md text-label-md rounded hover:bg-primary transition-all shadow-sm active:scale-95" id="exportCsvBtn" title="Download full transit log as spreadsheet" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export to CSV / Excel</span>
+</button>
+<!-- Secondary: Audit PDF -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container text-on-surface font-label-md text-label-md rounded hover:bg-surface-container-high transition-all shadow-sm active:scale-95" id="exportPdfBtn" title="Generate verified security audit document" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Export Audit PDF</span>
+</button>
+<!-- Tertiary: Print Daily Summary -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded hover:bg-surface-container-high hover:text-on-surface transition-all active:scale-95" onclick="window.print()" title="Print daily desk summary" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span class="hidden md:inline">Print Summary</span>
+</button>
+</div>
+</div>
+<!-- Bottom Filter Selectors Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-xs">
+<!-- Date Selector -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<div class="flex flex-col flex-1">
+<label class="font-label-sm text-label-sm text-outline uppercase leading-none">Date Range</label>
+<select class="bg-transparent font-label-md text-label-md font-semibold text-on-surface focus:outline-none cursor-pointer">
+<option selected="">Today: Oct 24, 2024</option>
+<option>Yesterday: Oct 23, 2024</option>
+<option>Last 7 Days (Oct 18 - 24)</option>
+<option>Custom Date Range...</option>
+</select>
+</div>
+</div>
+<!-- Role Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">badge</span>
+<div class="flex flex-col flex-1">
+<label class="font-label-sm text-label-sm text-outline uppercase leading-none">Role Category</label>
+<select class="bg-transparent font-label-md text-label-md font-semibold text-on-surface focus:outline-none cursor-pointer" id="roleFilter">
+<option value="ALL">All Roles (Students, Faculty, Staff)</option>
+<option value="STUDENT">Students Only</option>
+<option value="FACULTY">Faculty &amp; Professors</option>
+<option value="STAFF">Administrative &amp; Lab Staff</option>
+<option value="VISITOR">Registered Visitors</option>
+</select>
+</div>
+</div>
+<!-- Gate Checkpoint Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">sensor_door</span>
+<div class="flex flex-col flex-1">
+<label class="font-label-sm text-label-sm text-outline uppercase leading-none">Gate Checkpoint</label>
+<select class="bg-transparent font-label-md text-label-md font-semibold text-on-surface focus:outline-none cursor-pointer" id="gateFilter">
+<option value="ALL">All Checkpoints (Gates 1, 2, 3)</option>
+<option value="MAIN1">Main Gate 1 (Front Archway)</option>
+<option value="HOSTEL2">Hostel Gate 2 (South Perimeter)</option>
+<option value="TECH3">Tech Park Gate 3 (North Annex)</option>
+</select>
+</div>
+</div>
+<!-- Transit Type (IN / OUT) -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">swap_vert</span>
+<div class="flex flex-col flex-1">
+<label class="font-label-sm text-label-sm text-outline uppercase leading-none">Transit Direction</label>
+<select class="bg-transparent font-label-md text-label-md font-semibold text-on-surface focus:outline-none cursor-pointer" id="transitFilter">
+<option value="ALL">All Directions (IN • OUT • DENIED)</option>
+<option value="IN">Entries (IN Only)</option>
+<option value="OUT">Exits (OUT Only)</option>
+<option value="DENIED">Alerts &amp; Denied Attempts</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Comprehensive Access Log Data Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Counter bar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-surface">Active Gate Feed Log</span>
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary px-2 py-0.5 rounded font-hud-metric">2,845 RECORDS</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-tint"></span> Auto-refresh: 10s</span>
+<button class="hover:text-on-surface font-semibold flex items-center gap-0.5" title="Force Refresh" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Refresh
+          </button>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left" id="accessLogsTable">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-space-md" scope="col">Transit / Status</th>
+<th class="py-3 px-space-md" scope="col">Timestamp</th>
+<th class="py-3 px-space-md" scope="col">Barcode / Roll No</th>
+<th class="py-3 px-space-md" scope="col">Full Name &amp; Profile</th>
+<th class="py-3 px-space-md" scope="col">Affiliation &amp; Department</th>
+<th class="py-3 px-space-md" scope="col">Gate Checkpoint</th>
+<th class="py-3 px-space-md" scope="col">Verification Source</th>
+<th class="py-3 px-space-md text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: IN - Student -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  IN • ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:41:22 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                ASI22CS084
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Professional institutional identity photograph of an Indian male engineering student Arjun Menon wearing a light-blue formal shirt with campus security RFID backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyds7STJarHsv2Qt5rY3KItmQo_tf-niUtI4bdXLl_xkRgh9ebfmwDgKTMZnSnMolEAuSsTwZFtzQZ84clzHdIkVmn5v7LO0oU-uhcdnWUrbiEt_WbddzuGgdL4opGDEfYPdJTnzDthuNUJ0UwqForQxBma3VOPiOSI9IEZQiqVD_3lQTLiGMHCI7ZV2Psf6iUUA_bV89C_cZxTJjthKvQTOiSg5As_H6JaQixqDbk5IGjFez_Ht02"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Arjun Menon</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hosteller • Room H3-204</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech Computer Science</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2022-26 • S5 CSE-A</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Main Gate 1</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Scanner #01 Auto</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" title="View Student ID Details" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" title="Flag Entry Incident" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: IN - Faculty -->
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  IN • ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:40:15 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                FAC-EC-014
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Professional campus staff headshot of Dr Radhika Nair, an Indian woman professor with formal spectacles and faculty lanyard on clean studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbamP27JSI4EdAj0cCSmH1lpMBjJ7xivTv7ua3ZIj7k-A1VzOJS68k9PLGYiRhIwR5D6WheLrA9kwGGdtoyP2XW9lijp0ZoYxXHaaU3O97JcGIQ_gbjAV2oo4UocJM8bbJw9yyyC79KHgCJ93UYvA2BAAnpyvwtFHj2fxb4VnToWhQgCwbv20LOO3npa1nNqxLdo_CbOsSTg3NyN9563UbX-C4ukmKwQPMI2DDAPNKTxTd7tR6mKgZ"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Dr. Radhika Nair</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Priority Faculty Pass</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">Associate Professor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dept of Electronics &amp; Comm.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Main Gate 1</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Officer K. Rajesh</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" title="View Faculty Details" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" title="Flag Entry Incident" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: OUT - Student -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  OUT • EXIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:38:50 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                ASI21ME045
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Institutional profile photo of Rahul S, a young south Asian engineering student with friendly expression and collegiate polo shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnhIU73t3ht2Ep63NFhLz2taLprRI21AVtiuekNIpU0njWTkelnbJdz-xWgvBfelLJi8xBf8t23TDzlFdsUQ01-oYBo1kSCH-qv42o3ho815Sz9x4qZS9Pyts4SMKkMCVYmGG3-jth7siNcxyytjlvWbYgPr_EsWTEhnEBAadmEBZ2t08JgIBg1h1Jl6yvZt19XLI_lqxIAr8nPRvrbEgVNQ3d-U9CJ0gfRVjhWV492e_psSJa-RWb"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Rahul S.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Day Scholar • Bus Route 14</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech Mechanical Eng.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2021-25 • S7 ME-B</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Tech Park Gate 3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Scanner #03 Auto</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" title="View Details" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" title="Flag Incident" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: DENIED / Flagged Event -->
+<tr class="bg-error-container/30 hover:bg-error-container/50 transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+                  ACCESS DENIED
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-error font-bold">
+                09:36:12 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-error font-bold">
+                ASI23EC102
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Digital ID photo of Ananya P, an Indian female student in university campus setting with neutral expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwhnqtbwzLioSR3Rx7k4nx_XldkS31uWi1uTkkWHFr0D_9KwQl7ut_ZMJd9Quv3tk-mf6__9frtYNUUGWGUdPHTLXkYsqOYfM0wGXMOhNzDYMlB1lnE18EyA9VRFIgLCDc2twRialT4dBJkYrc2pNJetbxSsZQFo_1oKVYDhPfjFyyVfLkwwJ0fQVafkkPwV1NGBfkZCy9Uk4NSHkl2I7Y-oHDFZQ5pQPP-bhcF41KJrwjuqITaiKD"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Ananya P.</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Late curfew lock triggered</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech Electronics &amp; Comm.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2023-27 • S3 ECE-A</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Hostel Gate 2</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Warden Console Block</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 bg-primary-container text-on-primary font-label-sm text-label-sm rounded" title="Override Clearance" type="button">
+                    Override
+                  </button>
+<button class="p-1.5 hover:bg-error text-white bg-error/80 rounded transition-colors" title="Lockout Audit Details" type="button">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: IN - Faculty Head -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  IN • ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:34:01 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                FAC-ME-002
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Official academic portrait of senior professor Prof K V Suresh with distinguished grey hair, smart formal collared attire in an academic hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFKMLHK0F_d_UKpVplKYybrcuSnuk1m5ObZLcZG0xw5lgSvM8o1BycN4zZ-DTuvgB_LDbpxrAlddz6GJEtP70umQt-treIGyoiT_nfXWaSqGVP6Hl2Lbw7BUVsZK6wSQJdaoI2kSmNFohtcHTW9egFZNIDrfAMr6vnGzFzM-E0nyV_61FUINe2vt0isP1NMQ8wvGCkHtqWkzdhD_ijb6zzUxaGhWsyxk8n-J_6e5_30K45RN8Cxxxl"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Prof. K. V. Suresh</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Head of Department (ME)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">HOD • Dept of Mechanical</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Block C • Room ME-101</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Main Gate 1</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Scanner #01 Auto</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" title="View Details" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" title="Flag Entry Incident" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: IN - Student -->
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  IN • ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:31:44 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                ASI21EE019
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Campus photo ID portrait of Devika Nambiar, an Indian woman student wearing collegiate jacket with soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBttZ8I8T1FQ86UrKPTxcUqEi7i85FFLxfw3zqC0CyW28u78xUAvfBOqB-VccG89RrM9WIYZB83o9Y4N6nj2TAUMv6cTiUy_x93dQlFsfURMrsmAQMLrXz7KOcohqdL69C1KyTp3hfB0tAmJ8-XKjcSDKUBXXjvkbhN4jGq7KWJ51oqSueCaB-qv9WL8bgePecZgVcJwdfjr-H_WDcu8MrQ-tMfFEdPgQDzDzHc-88AZnNNsBufPMNu"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Devika Nambiar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Day Scholar • Metro Feeder</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech Electrical &amp; Electr.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2021-25 • S7 EEE</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Tech Park Gate 3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Scanner #03 Auto</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: OUT - Lab Technician / Staff -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  OUT • EXIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:29:10 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                STF-IT-088
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Identity pass portrait of Manoj Kumar, an Indian middle-aged technical lab instructor wearing polo shirt and ID badge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoce9K7IasToZH7qYybDiFtAl_Ty2zJiuIKwIwT4WZTToyj2RUijaD9rqNSgpqmmuFRll2W1mtuoaS2S5N9_qacCOZGGxW3Q-BUwoKOCnkmkG4fWVD_gSa7qzBj4wv_FpJS-9uDr83FsYLLBjHV7Py6x5RakHtDhSN8Ap7cpKImqcL95hkr62wJ4u611lqmYzdAKSMM47k9HVJH8UN5GVclQ6QZydvWgLdf4frZ-NFphG9NgEbXbL2"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Manoj Kumar K.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">System Staff • Server Room</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">Sr. Systems Engineer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Campus IT Infrastructure</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Main Gate 1</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Officer K. Rajesh</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: IN - Student -->
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  IN • ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:27:05 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                ASI20CE031
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Digital ID badge portrait of Gautham Mohan, a young Indian civil engineering student with spectacles and smart collared shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbZnh6ZLxUBmLGL1ElJEBptTQEHlHkCoCDdczrg8zp-m85VDXAKL1Sp1k41lMp8R3bLIiQVmv5ubk0otejvmDmsU3hzTznYQorJGnA4jv8yEUfK6vkqwrPPcbSpjMHK5qxOH1xktEmduBS8MzoWi8FVEDlyNiNDwqNBNs2WL4OPHEs3LUJwMBEb9vdhBpCjdsyQRqfZ1BsGYnOA4Iamua8n34X7D0kZw7_X_GKrqE3UjYwT5xdnG7q"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Gautham Mohan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hosteller • Room H1-112</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech Civil Engineering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2020-24 • Final Year</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Hostel Gate 2</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Scanner #02 Auto</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 9: OUT - Student -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  OUT • EXIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-on-surface font-medium">
+                09:25:48 AM
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-hud-metric text-secondary font-bold">
+                ASI23AD012
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Campus headshot portrait of Sneha Mariam, female student from artificial intelligence department with bright natural smile in university campus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChKlSgkpF8erT0DKmlGxDi39PwzL4owcpYLyymca6q159IL3jhKPCEC1aipuKKkKWwH07gHdrUgOdqQp_dvtqhBd2PG92xLWOGR_hx8nT8gTAjDzJyaOlZzsVQrLV6N-DU5Bn0pOuDjT6JdHl3FxelONAidsiIifq1_F7-ZFhtiqaZat_w-bZqzsCZnJokp9sNdT_2UtLLbsVtUJdhfn07spbznKGk5gZpIJv1hmUQAznisLOs68z_"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-body-md font-semibold text-on-surface">Sneha Mariam</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gate Pass #GP-8841 Approved</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">B.Tech AI &amp; Data Science</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch 2023-27 • S3 AD</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-md text-label-md">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Main Gate 1</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Officer K. Rajesh</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="p-1.5 hover:bg-error-container text-error rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span>Showing <strong class="text-on-surface font-hud-metric">1</strong> to <strong class="text-on-surface font-hud-metric">25</strong> of <strong class="text-on-surface font-hud-metric">2,845</strong> entries</span>
+<span class="text-outline">•</span>
+<select class="bg-surface-container px-2 py-1 rounded text-on-surface font-label-sm text-label-sm border-none focus:outline-none cursor-pointer">
+<option>25 per page</option>
+<option>50 per page</option>
+<option>100 per page</option>
+</select>
+</div>
+<!-- Numeric Pagination cluster -->
+<nav aria-label="Table Navigation" class="flex items-center gap-1">
+<button class="flex items-center justify-center px-space-sm py-1.5 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px] mr-1">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="w-8 h-8 rounded bg-primary-container text-on-primary font-hud-metric text-label-md font-bold shadow-sm" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-hud-metric text-label-md font-medium transition-colors" type="button">
+            2
+          </button>
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-hud-metric text-label-md font-medium transition-colors" type="button">
+            3
+          </button>
+<span class="px-2 font-hud-metric text-on-surface-variant text-label-md">...</span>
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-hud-metric text-label-md font-medium transition-colors" type="button">
+            114
+          </button>
+<button class="flex items-center justify-center px-space-sm py-1.5 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[18px] ml-1">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+<!-- Quick Checkpoint Footnote / Security Protocol notice -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span>All gate passage telemetry is cryptographically signed and stored in institutional audit storage for 180 days.</span>
+</div>
+<div class="flex items-center gap-space-md font-hud-metric">
+<span>SECURITY_KEY: 0x94B8_SHA256</span>
+<span>LATENCY: 14ms</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple table search filter micro-interaction
+  document.getElementById('searchInput')?.addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#accessLogsTable tbody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      if (text.includes(term)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+
+  // Client-side visual notification for exports
+  document.getElementById('exportCsvBtn')?.addEventListener('click', function() {
+    const originalText = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Preparing CSV...</span>';
+    setTimeout(() => {
+      this.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span><span>CSV Downloaded!</span>';
+      setTimeout(() => {
+        this.innerHTML = originalText;
+      }, 2000);
+    }, 800);
+  });
+
+  document.getElementById('exportPdfBtn')?.addEventListener('click', function() {
+    const originalText = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Compiling Audit...</span>';
+    setTimeout(() => {
+      this.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span><span>Audit PDF Ready</span>';
+      setTimeout(() => {
+        this.innerHTML = originalText;
+      }, 2000);
+    }, 1000);
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-auto py-space-md"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Adi Shankara Institute of Engineering &amp; Technology (ASIET) • Department of Campus Safety</span><span class="hidden sm:inline font-label-sm text-label-sm text-outline">•</span><span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">SYS_VER: 4.8.2-PROD</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-error">emergency</span><span>Security Desk Helpline: <strong class="font-hud-metric text-on-surface">Ext 2400 / +91 (484) 246-3825</strong></span></div><button class="flex items-center gap-space-xs px-space-sm py-1 bg-error-container text-on-error-container rounded text-label-sm font-label-sm hover:bg-error hover:text-on-error transition-colors" type="button"><span class="material-symbols-outlined text-[14px]">call</span><span>Intercom Link</span></button></div></div></footer></body></html>

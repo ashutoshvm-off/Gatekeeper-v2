@@ -1,0 +1,121 @@
+/* Native UI typography works without external font requests. */
+:root {
+  --font-ui: 'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-data: 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  font-size: 14px;
+  font-family: var(--font-ui);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3 { font-weight: 600; letter-spacing: -.025em; }
+h1 { font-size: 29px; }
+p { color: #65758b; line-height: 1.6; }
+code,kbd { font-family: var(--font-data); }
+.brand strong { letter-spacing: .045em; font-weight: 650; }
+.brand strong span { font-size: 9px; letter-spacing: .08em; font-weight: 500; }
+.eyebrow,.micro,.workspace-label { font-family: var(--font-ui); font-size: 11px; letter-spacing: .035em; font-weight: 600; }
+.workspace-label { color: #8da0ba; }
+.eyebrow { color: #906c35; }
+.micro { color: #6f8096; }
+.sidebar nav a { font-size: 13px; font-weight: 500; }
+.checkpoint strong { font-size: 12px; }
+.checkpoint span:not(.nav-dot):not(.material-symbols-outlined),.sidebar-bottom p,.demo-label { font-size: 11px; }
+.breadcrumbs,.operator strong,.clock { font-size: 12px; }
+.operator span { font-size: 11px; }
+.page-heading p { font-size: 13px; }
+.institution-banner h2 { font-size: 16px; letter-spacing: -.015em; }
+.institution-banner p { font-size: 12px; }
+.banner-tag { font-size: 10px; letter-spacing: .03em; }
+.stat>div>span { font-size: 12px; color: #64748b; }
+.stat strong { font-family: var(--font-ui); font-size: 31px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -.035em; }
+.stat small { font-size: 11px; color: #73839a; }
+.badge { font-family: var(--font-ui); font-size: 10px; font-weight: 600; letter-spacing: .015em; }
+.panel-heading h2 { font-size: 14px; }
+.panel-heading a { font-size: 12px; }
+.scanner-ready { font-size: 10px; letter-spacing: .035em; }
+.scan-id>span:last-child { font-size: 10px; letter-spacing: .035em; }
+.scanner-caption { font-size: 9px; letter-spacing: .03em; }
+.input-tip { font-size: 12px; }
+.scan-controls form label { font-size: 12px; font-weight: 600; letter-spacing: 0; }
+.scan-input input { font-family: var(--font-ui); font-size: 13px; }
+.scan-button { font-size: 13px; }
+.helper { font-size: 12px; }
+.try-demo>span { font-size: 11px; }
+.try-demo button { font-family: var(--font-data); font-size: 11px; }
+.awaiting h2 { font-size: 23px; font-weight: 600; }
+.awaiting p { font-size: 13px; }
+.awaiting-steps { font-size: 12px; }
+.awaiting-steps b { font-size: 10px; }
+.privacy-note { font-size: 11px; color: #78889c; }
+.verification-status strong { font-size: 15px; font-weight: 600; }
+.verification-status span { font-size: 11px; line-height: 1.5; }
+.identity-name h2 { font-size: 26px; font-weight: 600; }
+.identity-name p { font-size: 12px; }
+.identity-details label { font-size: 11px; letter-spacing: 0; }
+.identity-details strong,.identity-actions button { font-size: 12px; }
+.barcode-block strong { font-family: var(--font-data); font-size: 12px; }
+.barcode-block span { font-size: 10px; }
+.scan-ready-status { display: inline-flex; align-items: center; gap: 8px; color: #21805f; font-size: 12px; font-weight: 600; }
+.identity-actions { align-items: center; flex-wrap: wrap; }
+.recent-person strong { font-size: 12px; font-weight: 600; }
+.recent-person code { font-size: 10px; }
+.recent-person .badge { font-size: 9px; }
+.recent-meta { font-size: 10px; }
+.recent-meta time { font-family: var(--font-ui); font-variant-numeric: tabular-nums; }
+th { font-family: var(--font-ui); text-transform: none; font-size: 12px; font-weight: 600; letter-spacing: 0; color: #5e728f; }
+td { font-size: 12px; }
+td code { font-size: 11px; }
+td small,.person-cell span:not(.avatar),.person-cell code { font-size: 11px; }
+.person-cell strong { font-size: 13px; }
+.search input,.filters select,.filters input,.filters button { font-size: 12px; }
+.tabs button { font-size: 12px; }
+.tool-title h2 { font-size: 16px; }
+.tool-title p,.checkbox-label,.panel-note,.footnote,.admin-control>p { font-size: 12px; }
+.format-options strong { font-size: 12px; }
+.format-options span:not(.material-symbols-outlined),.import-panel small { font-size: 11px; }
+.pagination,.info-banner span:not(.material-symbols-outlined) { font-size: 12px; }
+.info-banner strong { font-size: 13px; }
+.protocol-select,.admin-links a,.admin-links button { font-size: 12px; }
+.record-form label,.login-card label { font-size: 12px; }
+.login-story .eyebrow { font-size: 11px; letter-spacing: .08em; }
+.login-story h1 { font-weight: 600; letter-spacing: -.035em; }
+.login-story>p { font-size: 14px; }
+.login-card h2 { font-size: 28px; font-weight: 600; letter-spacing: -.025em; }
+.login-card>p,.login-card input,.login-card select,.login-submit { font-size: 13px; }
+.login-submit>svg:last-child { margin-left: auto; }
+.login-top,.login-institution span,.login-disclaimer { font-size: 10px; letter-spacing: .01em; }
+.login-institution { font-size: 12px; }
+.demo-credentials strong,.demo-credentials p,.demo-credentials code,.login-switch { font-size: 12px; }
+footer,footer>span:last-child { font-size: 10px; }
+@media (min-width:761px) and (max-width:1250px) {
+  .panel-heading { flex-wrap: wrap; }
+  .recent-person strong { font-size: 11px; }
+  .recent-person code { font-size: 9px; }
+}
+@media (max-width:760px) {
+  h1,.page-heading h1 { font-size: 26px; }
+  .sidebar nav a>span:not(.material-symbols-outlined):not(.nav-dot) { font-size: 9px; }
+  .sidebar .sign-out { font-size: 0; }
+  .eyebrow,.micro { font-size: 10px; }
+  .page-heading p,.page-heading button { font-size: 12px; }
+  .institution-banner h2 { font-size: 13px; }
+  .institution-banner p { font-size: 10px; }
+  .stat>div>span { font-size: 11px; max-width: none; }
+  .stat strong { font-size: 26px; }
+  .stat small { font-size: 10px; }
+  .panel-heading { flex-wrap: wrap; }
+  .panel-heading h2 { font-size: 13px; }
+  .panel-heading a,.privacy-note { font-size: 11px; }
+  .awaiting h2 { font-size: 22px; }
+  .awaiting-steps { gap: 8px; font-size: 11px; }
+  .identity-name h2 { font-size: 23px; }
+  .barcode-block { flex-wrap: wrap; }
+  .barcode-block .barcode { max-width: 100%; }
+  .tabs button { font-size: 11px; }
+  .recent-person strong { font-size: 12px; }
+  .recent-person code { font-size: 10px; }
+  .pagination { font-size: 10px; }
+  .format-options span:not(.material-symbols-outlined) { font-size: 10px; }
+  .login-card h2 { font-size: 26px; }
+  .login-disclaimer,footer,footer>span:last-child { font-size: 10px; }
+}

@@ -1,0 +1,437 @@
+{
+  "Faculty-0": {
+    "heads": [
+      "Faculty Member",
+      "Department & Post",
+      "Permit / Tag",
+      "Lab & Facility Clearances",
+      "After-Hours Pass",
+      "Scanner Protocol",
+      "Overrides"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Dr. Anand H. FAC-CS-001",
+          "Computer Science & Engg. Head of Department",
+          "directions_car ASIET-P-042",
+          "FabLab 24x7 Server Core Dignitary Escort",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBfd8woJ0jWBxDkY0AVNsuSeenRN_MjW_qFan40gGgcnUja64MdkvwL0juNYN8TmCuuiU9fim9pyXbQRXGAEY9-dguXN8t4bimRLiBtRQ9zdD-w-ApdOEexFxmeQqGuAs_IO1DrpqqE9pQrqtVHlyfSaoUQQl2Y2mrMjLseWUr8AGSlFlvUw7mfxIX6cfY8zNpFyO-Hknzqgb7jDEtEMAU7lkyhC8Tn56wBtw0xb6neraIQhGWBD8vA"
+      },
+      {
+        "cells": [
+          "Prof. Meera Nair FAC-EC-014",
+          "Electronics & Communication Associate Professor",
+          "two_wheeler ASIET-P-118",
+          "VLSI Center Central Library",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBPUouQk-WyrDVUgOAMEStUW0_bx6SovK9mP-zS0ER7cqNWCz55A_8lPOEJEELuk68PMq7FtOd2mFR0Z05GkROLmhqNtwMsCMRsUm-pWpxN_zl2AqMUju5EUkh6jDorvvYHqYnxK9eAan-L0WaSWdSrkj21CCbNBR_L7uIrhZ_s-71OEO7nejPy37OKBn1-FDi7UsueLhg4R_dYo-M77cC99d36E_A4ls76WWmD3yo1dRbgGejpVGe5"
+      },
+      {
+        "cells": [
+          "Dr. Jacob Varghese FAC-ME-002",
+          "Mechanical Engineering Dean Research / Professor",
+          "directions_car ASIET-P-004",
+          "Robotics Center CNC Bay 24x7 VIP Escort",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCaOInqBZxJOWcNill6zAfeSK4UHZ9NACFaZMQA_k6J-NbMVAqMaNe6KLrrIfABoY8eNLl88T1bH2HOozIs0RJoK0dKCaKKDKFJENzAVWZNN4upijgqrO898T9A1mftLrARMaacr9W7BwbfjaaghHjfw8L1cYHP2ZicyA62KTol0cqbS8yYoQ2Gm2ICZl6u0ObC62OtMH-zVTxMZA0zWr7ztCypzq3HXuq0ueoLtOzGLtNusBwjU5To"
+      },
+      {
+        "cells": [
+          "Prof. Arunima S. FAC-AI-008",
+          "Artificial Intelligence & DS Assistant Professor",
+          "directions_car ASIET-P-209",
+          "Deep Learning GPU Lab",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuANYRR5GB38h1UUn-Cx2i3B6sAAZiOQfFjj6nsk7p6_kvew76ICGQrMyYcnbGKj8uG9-MFWhvX8oWuiRPickjF7KNF1UT1996wVNWZ2bkISWwSbOMTSxR0YmWBETi8RqN5ytkCfmJmj2bjikmxOQguvhdG6NEUew1arcuiw5foZA7NnUfwDsXYwXZkNho29ccNOb64_kSVtmI2ac76JyuCnvwiPWII0sQpHv9xFxvviPlI0yvN_AvxK"
+      },
+      {
+        "cells": [
+          "Mr. Sreejith K. FAC-CE-082",
+          "Civil Engineering Lab Superintendent",
+          "two_wheeler ASIET-P-332",
+          "Concrete Lab Geotech Bay",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuClZ4iJvOdMH7pSOnIhj5xN2kxkJn5smLxVORz6h5HY-ws0gUSACpx0UxInxlWqYrQ-_fm3W7winVX5JSi9YW75NT2ZNKpsOUKHcrdcvkwQ6oRrQ2SsUEDBJgkYswsRVxkkXppcRfLi8w2Hq4MNJeA-x2rdguBuAb639MxkEz6iZsrXCcq8-wenF2rLQ7YvGHYKIK1pUV6lAmXebHkj6fu2KbqQadc9Ls2NJEd5IrmT7sg9SjEsW_kT"
+      },
+      {
+        "cells": [
+          "Dr. Radhika Mohan FAC-EE-005",
+          "Electrical & Electronics Professor • PG Dean",
+          "directions_car ASIET-P-088",
+          "HV Simulation Lab Board Room",
+          "",
+          "Instant Pass (No Prompt) Require Vehicle Log Visual Confirmation Required",
+          "tune lock_reset"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuALkJr-4SX--xjpr6klyTheezFSAOCCG08HqqFOBsT80RTotA0fWUY94rcCqJzrAxX_65GpzHlJFh0RxEWhvFdztkZuWf1Fa0tWaYqam6kfowcOV9wOjeVucN_EJsT95fznvWneswTCmoQBLZ61OHgMKrDXHnYryPdKAfGTlsCqs5wSRIGgU8vKnD5EUvViX5NBwwnH5NmDyxvEHCO7I_JfQ8oNh4-ZtX7iBAK30LARhapXb_6cyaTK"
+      }
+    ]
+  },
+  "Logs-0": {
+    "heads": [
+      "Transit / Status",
+      "Timestamp",
+      "Barcode / Roll No",
+      "Full Name & Profile",
+      "Affiliation & Department",
+      "Gate Checkpoint",
+      "Verification Source",
+      "Actions"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "IN • ENTRY",
+          "09:41:22 AM",
+          "ASI22CS084",
+          "Arjun Menon Hosteller • Room H3-204",
+          "B.Tech Computer Science Batch 2022-26 • S5 CSE-A",
+          "location_on Main Gate 1",
+          "Scanner #01 Auto",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAyds7STJarHsv2Qt5rY3KItmQo_tf-niUtI4bdXLl_xkRgh9ebfmwDgKTMZnSnMolEAuSsTwZFtzQZ84clzHdIkVmn5v7LO0oU-uhcdnWUrbiEt_WbddzuGgdL4opGDEfYPdJTnzDthuNUJ0UwqForQxBma3VOPiOSI9IEZQiqVD_3lQTLiGMHCI7ZV2Psf6iUUA_bV89C_cZxTJjthKvQTOiSg5As_H6JaQixqDbk5IGjFez_Ht02"
+      },
+      {
+        "cells": [
+          "IN • ENTRY",
+          "09:40:15 AM",
+          "FAC-EC-014",
+          "Dr. Radhika Nair Priority Faculty Pass",
+          "Associate Professor Dept of Electronics & Comm.",
+          "location_on Main Gate 1",
+          "Officer K. Rajesh",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbamP27JSI4EdAj0cCSmH1lpMBjJ7xivTv7ua3ZIj7k-A1VzOJS68k9PLGYiRhIwR5D6WheLrA9kwGGdtoyP2XW9lijp0ZoYxXHaaU3O97JcGIQ_gbjAV2oo4UocJM8bbJw9yyyC79KHgCJ93UYvA2BAAnpyvwtFHj2fxb4VnToWhQgCwbv20LOO3npa1nNqxLdo_CbOsSTg3NyN9563UbX-C4ukmKwQPMI2DDAPNKTxTd7tR6mKgZ"
+      },
+      {
+        "cells": [
+          "OUT • EXIT",
+          "09:38:50 AM",
+          "ASI21ME045",
+          "Rahul S. Day Scholar • Bus Route 14",
+          "B.Tech Mechanical Eng. Batch 2021-25 • S7 ME-B",
+          "location_on Tech Park Gate 3",
+          "Scanner #03 Auto",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBnhIU73t3ht2Ep63NFhLz2taLprRI21AVtiuekNIpU0njWTkelnbJdz-xWgvBfelLJi8xBf8t23TDzlFdsUQ01-oYBo1kSCH-qv42o3ho815Sz9x4qZS9Pyts4SMKkMCVYmGG3-jth7siNcxyytjlvWbYgPr_EsWTEhnEBAadmEBZ2t08JgIBg1h1Jl6yvZt19XLI_lqxIAr8nPRvrbEgVNQ3d-U9CJ0gfRVjhWV492e_psSJa-RWb"
+      },
+      {
+        "cells": [
+          "ACCESS DENIED",
+          "09:36:12 AM",
+          "ASI23EC102",
+          "Ananya P. Late curfew lock triggered",
+          "B.Tech Electronics & Comm. Batch 2023-27 • S3 ECE-A",
+          "location_on Hostel Gate 2",
+          "Warden Console Block",
+          "Override report_problem"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCwhnqtbwzLioSR3Rx7k4nx_XldkS31uWi1uTkkWHFr0D_9KwQl7ut_ZMJd9Quv3tk-mf6__9frtYNUUGWGUdPHTLXkYsqOYfM0wGXMOhNzDYMlB1lnE18EyA9VRFIgLCDc2twRialT4dBJkYrc2pNJetbxSsZQFo_1oKVYDhPfjFyyVfLkwwJ0fQVafkkPwV1NGBfkZCy9Uk4NSHkl2I7Y-oHDFZQ5pQPP-bhcF41KJrwjuqITaiKD"
+      },
+      {
+        "cells": [
+          "IN • ENTRY",
+          "09:34:01 AM",
+          "FAC-ME-002",
+          "Prof. K. V. Suresh Head of Department (ME)",
+          "HOD • Dept of Mechanical Block C • Room ME-101",
+          "location_on Main Gate 1",
+          "Scanner #01 Auto",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFKMLHK0F_d_UKpVplKYybrcuSnuk1m5ObZLcZG0xw5lgSvM8o1BycN4zZ-DTuvgB_LDbpxrAlddz6GJEtP70umQt-treIGyoiT_nfXWaSqGVP6Hl2Lbw7BUVsZK6wSQJdaoI2kSmNFohtcHTW9egFZNIDrfAMr6vnGzFzM-E0nyV_61FUINe2vt0isP1NMQ8wvGCkHtqWkzdhD_ijb6zzUxaGhWsyxk8n-J_6e5_30K45RN8Cxxxl"
+      },
+      {
+        "cells": [
+          "IN • ENTRY",
+          "09:31:44 AM",
+          "ASI21EE019",
+          "Devika Nambiar Day Scholar • Metro Feeder",
+          "B.Tech Electrical & Electr. Batch 2021-25 • S7 EEE",
+          "location_on Tech Park Gate 3",
+          "Scanner #03 Auto",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBttZ8I8T1FQ86UrKPTxcUqEi7i85FFLxfw3zqC0CyW28u78xUAvfBOqB-VccG89RrM9WIYZB83o9Y4N6nj2TAUMv6cTiUy_x93dQlFsfURMrsmAQMLrXz7KOcohqdL69C1KyTp3hfB0tAmJ8-XKjcSDKUBXXjvkbhN4jGq7KWJ51oqSueCaB-qv9WL8bgePecZgVcJwdfjr-H_WDcu8MrQ-tMfFEdPgQDzDzHc-88AZnNNsBufPMNu"
+      },
+      {
+        "cells": [
+          "OUT • EXIT",
+          "09:29:10 AM",
+          "STF-IT-088",
+          "Manoj Kumar K. System Staff • Server Room",
+          "Sr. Systems Engineer Campus IT Infrastructure",
+          "location_on Main Gate 1",
+          "Officer K. Rajesh",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCoce9K7IasToZH7qYybDiFtAl_Ty2zJiuIKwIwT4WZTToyj2RUijaD9rqNSgpqmmuFRll2W1mtuoaS2S5N9_qacCOZGGxW3Q-BUwoKOCnkmkG4fWVD_gSa7qzBj4wv_FpJS-9uDr83FsYLLBjHV7Py6x5RakHtDhSN8Ap7cpKImqcL95hkr62wJ4u611lqmYzdAKSMM47k9HVJH8UN5GVclQ6QZydvWgLdf4frZ-NFphG9NgEbXbL2"
+      },
+      {
+        "cells": [
+          "IN • ENTRY",
+          "09:27:05 AM",
+          "ASI20CE031",
+          "Gautham Mohan Hosteller • Room H1-112",
+          "B.Tech Civil Engineering Batch 2020-24 • Final Year",
+          "location_on Hostel Gate 2",
+          "Scanner #02 Auto",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDbZnh6ZLxUBmLGL1ElJEBptTQEHlHkCoCDdczrg8zp-m85VDXAKL1Sp1k41lMp8R3bLIiQVmv5ubk0otejvmDmsU3hzTznYQorJGnA4jv8yEUfK6vkqwrPPcbSpjMHK5qxOH1xktEmduBS8MzoWi8FVEDlyNiNDwqNBNs2WL4OPHEs3LUJwMBEb9vdhBpCjdsyQRqfZ1BsGYnOA4Iamua8n34X7D0kZw7_X_GKrqE3UjYwT5xdnG7q"
+      },
+      {
+        "cells": [
+          "OUT • EXIT",
+          "09:25:48 AM",
+          "ASI23AD012",
+          "Sneha Mariam Gate Pass #GP-8841 Approved",
+          "B.Tech AI & Data Science Batch 2023-27 • S3 AD",
+          "location_on Main Gate 1",
+          "Officer K. Rajesh",
+          "badge flag"
+        ],
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuChKlSgkpF8erT0DKmlGxDi39PwzL4owcpYLyymca6q159IL3jhKPCEC1aipuKKkKWwH07gHdrUgOdqQp_dvtqhBd2PG92xLWOGR_hx8nT8gTAjDzJyaOlZzsVQrLV6N-DU5Bn0pOuDjT6JdHl3FxelONAidsiIifq1_F7-ZFhtiqaZat_w-bZqzsCZnJokp9sNdT_2UtLLbsVtUJdhfn07spbznKGk5gZpIJv1hmUQAznisLOs68z_"
+      }
+    ]
+  },
+  "Data-0": {
+    "heads": [
+      "Subject & Affiliation",
+      "ID / Roll No.",
+      "Department & Batch",
+      "Assigned Barcode Hash",
+      "Access Privilege",
+      "Card State",
+      "Quick Actions"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "AK Ananya K. Menon TYPE: STUDENT_REGULAR",
+          "ASIET-CS-2022-041",
+          "Computer Science & Eng. (S6)",
+          "barcode *ASI-88349210*",
+          "24/7 Hostel + Academic",
+          "ACTIVE",
+          "barcode_scanner edit_note"
+        ]
+      },
+      {
+        "cells": [
+          "RN Dr. Ramesh Narayanan TYPE: FACULTY_PROFESSOR",
+          "ASIET-FAC-ECE-012",
+          "Dept of Electronics & Comm.",
+          "barcode *ASI-10938442*",
+          "Priority VIP + Labs + Gates",
+          "ACTIVE",
+          "barcode_scanner edit_note"
+        ]
+      },
+      {
+        "cells": [
+          "SV Siddharth V. Pillai TYPE: STUDENT_DAY_SCHOLAR",
+          "ASIET-ME-2023-118",
+          "Mechanical Engineering (S4)",
+          "barcode *ASI-77319024*",
+          "Perimeter Only (07:30 - 18:30)",
+          "SUSPENDED",
+          "barcode_scanner edit_note"
+        ]
+      },
+      {
+        "cells": [
+          "LM Lakshmi Mohan TYPE: STAFF_LAB_INSTRUCTOR",
+          "ASIET-STF-EEE-005",
+          "Electrical & Electronics Labs",
+          "barcode *ASI-66291048*",
+          "Campus + Lab Complex",
+          "ACTIVE",
+          "barcode_scanner edit_note"
+        ]
+      }
+    ]
+  },
+  "Data-1": {
+    "heads": [
+      "Dataset Identifier / File",
+      "Triggered By",
+      "Record Delta",
+      "Timestamp",
+      "Verification Status"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "file_present student_admissions_batch_2024.xlsx",
+          "Imported by Admin (K. Rajesh)",
+          "+720 records added",
+          "Oct 20, 2024 • 11:24 AM",
+          "Success"
+        ]
+      },
+      {
+        "cells": [
+          "description faculty_roster_term_odd.csv",
+          "Imported by HR (D. Varma)",
+          "14 records updated",
+          "Oct 18, 2024 • 04:12 PM",
+          "Success"
+        ]
+      },
+      {
+        "cells": [
+          "file_download campus_master_export_q3.csv",
+          "Exported by Security Chief",
+          "3,820 records",
+          "Oct 15, 2024 • 09:05 AM",
+          "download_done Downloaded"
+        ]
+      }
+    ]
+  },
+  "Admin-0": {
+    "heads": [
+      "Teacher / Faculty Member",
+      "Gate Physical Status",
+      "Koha LMS Library Privilege Tier",
+      "RFID / Barcode Tag",
+      "Active Checkpoint Gate",
+      "Admin Controls"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "AH Dr. Anand H. Professor & Head • CSE Department",
+          "PRESENT 08:14 AM",
+          "Tier-1 Unlimited Faculty Borrowing IEEE Xplore + Springer Subscribed • Kohler Synced",
+          "FAC-CS-001",
+          "Gate 01 (Main Arch Lane 2)",
+          "cached menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "MN Prof. Meera Nair Associate Professor • ECE Department",
+          "PRESENT 08:29 AM",
+          "Tier-1 Unlimited Faculty Borrowing Digital Signal Proc Lab Access • 0 Overdues",
+          "FAC-EC-014",
+          "Gate 02 (Decennial East)",
+          "cached menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "JV Dr. Jacob Varghese Dean (Research & Innovation) • Mechanical",
+          "PRESENT 07:55 AM",
+          "Dean Research Full Enclave Pass Institutional Archive Privileges Unrestricted",
+          "FAC-ME-002",
+          "Gate 01 (Main Arch Lane 1)",
+          "cached menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "AS Prof. Arunima S. Assistant Professor • AI & Data Science",
+          "PRESENT 08:42 AM",
+          "Tier-2 Faculty Borrowing (15 Books) Koha RFID Card Synchronized",
+          "FAC-AD-007",
+          "Gate 03 (Lab Annex North)",
+          "cached menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "SK Mr. Sreejith K. Senior Lab Superintendent • Civil Eng.",
+          "OFF CAMPUS Yesterday 17:30",
+          "Staff Technical Borrowing (5 Books) Standard Circulation Active",
+          "STF-CE-031",
+          "None (No Transit Detected)",
+          "login menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "RM Dr. Radhika Mohan Professor • Electrical & Electronics",
+          "PRESENT 08:02 AM",
+          "Tier-1 Unlimited Faculty Borrowing Power Electronics Lab Key Activated",
+          "FAC-EE-005",
+          "Gate 01 (Main Arch Lane 3)",
+          "cached menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "KG Mr. Kishore George Visiting Executive Faculty • MBA Dept",
+          "OFF CAMPUS Last: 2 days ago",
+          "Visiting Scholar Reference Only E-Resource Remote Gateway Open",
+          "VIS-MB-003",
+          "None (Scheduled 14:00 PM)",
+          "login menu_book key_off"
+        ]
+      },
+      {
+        "cells": [
+          "RN Dr. Ramesh Narayanan Professor • Electronics & Comm.",
+          "PRESENT 08:35 AM",
+          "Tier-1 Unlimited Faculty Borrowing VLSI Design Lab Security Level 4",
+          "FAC-EC-003",
+          "Gate 02 (Decennial East)",
+          "cached menu_book key_off"
+        ]
+      }
+    ]
+  },
+  "Admin-1": {
+    "heads": [
+      "Ingested Filename",
+      "System Source",
+      "Punches Processed",
+      "Reconciliation Result",
+      "Admin Operator",
+      "Verification Hash"
+    ],
+    "rows": [
+      {
+        "cells": [
+          "2023-2024_Odd_Semester_Gate_Logs.csv",
+          "ASIET Turnstile v3.x DB",
+          "45,210 punches",
+          "check_circle 100% Indexed • 0 Conflicts",
+          "Dr. Anand H. (HOD CSE)",
+          "SHA256: 4f8a...92b1"
+        ]
+      },
+      {
+        "cells": [
+          "Hostel_Turnstile_Archived_2023.dat",
+          "ZKTeco BioAccess Terminal 04",
+          "12,800 punches",
+          "check_circle Reconciled • 12 Duplicates Skipped",
+          "Security Superv. (Duty A)",
+          "SHA256: d17c...68ea"
+        ]
+      }
+    ]
+  }
+}

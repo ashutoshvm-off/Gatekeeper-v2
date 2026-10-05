@@ -1,0 +1,49 @@
+.brand-mark:has(.college-logo),.institution-seal:has(.college-logo) {
+  background: white;
+  border-color: #d6bd90;
+  padding: 3px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.college-logo { display: block; width: 100%; height: 100%; object-fit: contain; }
+.login-art .brand-mark { width: 54px; height: 54px; }
+.campus-photo {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 28px 0 0;
+  border: 1px solid #ffffff25;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #193250;
+}
+.campus-photo>img { display: block; width: 100%; height: auto; aspect-ratio: 547 / 366; object-fit: cover; }
+.campus-photo figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 38px 18px 16px;
+  background: linear-gradient(transparent,rgba(8,23,43,.94));
+  color: white;
+}
+.campus-photo figcaption span { display: block; color: #e4d1ab; font-size: 11px; }
+.campus-photo figcaption strong { display: block; margin: 4px 0; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.login-art .login-story { padding-top: 32px; }
+.login-art .login-institution { margin-top: 24px; line-height: 1.5; }
+.institution-banner {
+  background-image: linear-gradient(90deg,#152b4c 15%,rgba(21,43,76,.95) 55%,rgba(21,43,76,.55)),url('/college-campus.jpg');
+  background-size: cover,45% auto;
+  background-position: center,right 50%;
+  background-repeat: no-repeat;
+}
+.institution-banner>div { position: relative; z-index: 1; }
+@media (max-width:1000px) and (min-width:761px) {
+  .sidebar .brand-mark:has(.college-logo) { width: 42px; height: 42px; }
+}
+@media (max-width:760px) {
+  .sidebar .brand-mark:has(.college-logo) { padding: 1px; }
+  .login-art .brand-mark { width: 44px; height: 44px; }
+  .login-art .login-story { padding-top: 24px; }
+  .campus-photo { max-width: none; margin-top: 20px; }
+  .campus-photo>img { height: 210px; object-position: center 48%; }
+  .campus-photo figcaption { padding: 30px 14px 12px; }
+}

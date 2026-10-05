@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#b6c6f1","on-secondary-fixed":"#2f1500","secondary-container":"#fe932c","surface":"#f8f9ff","secondary":"#904d00","on-primary":"#ffffff","on-error":"#ffffff","tertiary-container":"#00233a","surface-container-lowest":"#ffffff","primary-container":"#0f2042","on-tertiary-container":"#228fd3","background":"#f8f9ff","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-primary-container":"#7988b0","on-tertiary-fixed":"#001d31","outline-variant":"#c5c6cf","on-error-container":"#93000a","on-surface-variant":"#45464e","primary":"#000922","inverse-on-surface":"#eaf1ff","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","on-secondary":"#ffffff","surface-dim":"#cbdbf5","on-secondary-container":"#663500","outline":"#75777f","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","on-primary-fixed":"#081a3c","primary-fixed":"#d9e2ff","secondary-fixed-dim":"#ffb77d","surface-container":"#e5eeff","surface-variant":"#d3e4fe","surface-tint":"#4f5e83","error":"#ba1a1a","inverse-primary":"#b6c6f1","surface-container-high":"#dce9ff","inverse-surface":"#213145","tertiary":"#000b16","secondary-fixed":"#ffdcc3","on-secondary-fixed-variant":"#6e3900","on-background":"#0b1c30","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#37466a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-tablet":"1rem","gutter":"1rem","margin-tablet":"1.5rem","space-xl":"2rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"1rem","space-sm":"0.5rem"},"fontFamily":{"hud-metric":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"label-md":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"hud-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="ASIET Gatekeeper Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt4FVLC0rErGqoaLFv0p6-fm3oVNCm7zDEGssvrCjZ--Gu_1hXliBRGmZKyugDt_kTSUUu9XEcX-OamUAJ3rJQd4viswmEePdIE-qzQZHvMXlruVwFpFiD-VdVvNOrQhDKY6coyfOFb2op10sPP3zbnHARvOI3GdguwtWMyzTD1LTQu810FuhVit9uXF5BMIzAQUyXf8D32dv4Y8lCno6SMlyOBxoOR6U_oGed280c4F73UKhsKHOt"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-white">Adi Shankara Institute of Engineering &amp; Technology</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Gatekeeper | Campus Security &amp; Access Control System</span></div><div class="hidden xl:flex items-center gap-space-xs ml-space-lg px-space-sm py-1 bg-tertiary-container rounded border border-outline/30"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-tertiary-fixed">Gate 01 - Main Archway • ACTIVE</span></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-sm py-1 bg-tertiary-container/60 rounded"><span class="material-symbols-outlined text-[16px] text-on-primary-container">schedule</span><span class="font-hud-metric text-label-md text-on-primary-container">IST 09:42:18 AM</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden lg:flex items-center gap-space-xs bg-primary/40 p-1 rounded" data-active-classes="bg-surface-container-lowest text-primary font-label-md font-bold rounded shadow-sm"><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="barcode-scanner" href="#">Barcode Scanner</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="access-logs" href="#">Access Logs</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-surface-container-lowest text-primary font-label-md font-bold rounded shadow-sm" data-path="data-management" href="#">Data Management</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-primary-container hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="faculty-privileges" href="#">Faculty Privileges</a></nav><div class="flex items-center gap-space-md pl-space-md border-l border-outline/20"><div class="flex flex-col text-right hidden md:block"><span class="font-label-md text-label-md text-white font-semibold">Officer K. Rajesh</span><span class="font-label-sm text-label-sm text-on-primary-container">Chief Warden / Gate 1</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><a class="p-1.5 text-on-primary-container hover:bg-surface-container-high hover:text-on-surface rounded transition-colors flex items-center" data-path="sign-out" href="#" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- HUD Utility Sub-Ribbon -->
+<div class="w-full bg-surface-container-low py-space-sm px-margin-desktop flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-hud-metric">SECURITY DB REPLICATION CLUSTER: NODE_04-KOCHI</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">database</span>
+<span class="font-label-sm text-label-sm font-hud-metric">INTEGRITY HASH: 8f92a10e7b99c4</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-0.5 rounded shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">cached</span>
+<span class="text-on-surface-variant font-hud-metric">KTU PORTAL GATEWAY: OK</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-0.5 rounded shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary-container">lock</span>
+<span class="text-on-surface-variant font-hud-metric">AES-256 VAULT ACTIVE</span>
+</div>
+</div>
+</div>
+<!-- Main Content Stage -->
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Title & Top Telemetry Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-hud-metric font-bold">ASIET // CONTROL DESK // REGISTRY ENGINE</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Master Identity &amp; Barcode Database Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Manage, synchronize, import, and export comprehensive student and faculty identity records for automated gate authentication.
+        </p>
+</div>
+<!-- Live Sync Capsule Card -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-center gap-space-lg min-w-[320px]">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">sync_saved_locally</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">ERP Connector</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-tight">Synced 12 mins ago</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">ASIET SIS &amp; KTU University Gateway</span>
+</div>
+<button class="ml-auto p-2 bg-surface text-primary hover:bg-surface-container-high rounded transition-all shadow-sm active:scale-95" id="forceSyncBtn" onclick="triggerManualSync()" title="Force Replication Sync" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Tab Section Controls -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs w-full sm:w-auto" role="tablist">
+<button class="flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md font-bold transition-all" id="tabStudentBtn" onclick="switchDbTab('student')" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Student Database</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-hud-metric text-label-sm">3,450 Records</span>
+</button>
+<button class="flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-label-md text-label-md font-semibold" id="tabFacultyBtn" onclick="switchDbTab('faculty')" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Faculty &amp; Staff Database</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-hud-metric text-label-sm">380 Records</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md px-space-sm w-full sm:w-auto justify-end">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Dual Authorization Active</span>
+</div>
+<div class="h-4 w-px bg-outline-variant"></div>
+<span class="font-label-sm text-label-sm font-hud-metric text-on-surface-variant">BARCODE FORMAT: CODE-128 / QR v4</span>
+</div>
+</div>
+<!-- High Visibility Action Center: Import & Export Dual Cards -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg">
+<!-- Card 1: Import Identity Records -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-hud-metric">INGEST PIPELINE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Import Identity Records</h2>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container text-primary font-label-sm text-label-sm font-semibold rounded font-hud-metric">INGEST_VER: 2.4</span>
+</div>
+<!-- Drag and Drop Dropzone -->
+<div class="relative group bg-surface-container-low hover:bg-surface-container transition-colors rounded-xl p-space-xl flex flex-col items-center justify-center text-center cursor-pointer shadow-inner" id="dropzoneContainer">
+<input accept=".csv,.xlsx,.json" class="absolute inset-0 opacity-0 cursor-pointer" id="bulkFileInput" onchange="handleFileSelect(event)" type="file"/>
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[32px]">folder_zip</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary font-semibold">Drop CSV, XLSX, or ASIET SIS JSON file here</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+              Automated gate authentication registry engine updates both student and faculty profile nodes simultaneously.
+            </p>
+<!-- File staging status pill (hidden by default) -->
+<div class="hidden mt-space-md items-center gap-space-sm px-space-md py-1.5 bg-surface-container-lowest text-primary rounded-full shadow-sm" id="fileSelectionPill">
+<span class="material-symbols-outlined text-[16px] text-secondary">description</span>
+<span class="font-label-md text-label-md font-hud-metric font-semibold" id="selectedFileName">payload_staged.csv</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric" id="selectedFileSize">2.4 MB</span>
+</div>
+</div>
+<!-- Configuration Controls & Checkboxes -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-lg">
+<label class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-0.5 accent-primary h-4 w-4 rounded" id="updateExistingChk" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Update existing records</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Overwrite existing roll numbers and RFID tag assignments.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-0.5 accent-primary h-4 w-4 rounded" id="autoGenBarcodesChk" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Auto-generate Barcodes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compile unique cryptographic CODE-128 seeds for new entries.</span>
+</div>
+</label>
+</div>
+<!-- Download Templates Bar -->
+<div class="mt-space-lg flex flex-wrap items-center justify-between gap-space-sm p-space-sm bg-surface rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Standard Schema Templates:</span>
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-hud-metric transition-colors" href="javascript:void(0)" onclick="simulateDownload('student_schema_template.csv')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>Student Template (.csv)</span>
+</a>
+<a class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-hud-metric transition-colors" href="javascript:void(0)" onclick="simulateDownload('faculty_schema_template.csv')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>Faculty Template (.csv)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Progress and CTA Area -->
+<div class="mt-space-xl">
+<!-- Simulation Progress Container -->
+<div class="hidden mb-space-md flex-col gap-1.5" id="uploadProgressSection">
+<div class="flex items-center justify-between font-label-sm text-label-sm font-hud-metric">
+<span class="text-primary font-semibold" id="uploadStatusText">Validating structural headers...</span>
+<span class="text-secondary font-bold" id="uploadPercentText">0%</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary transition-all duration-300 w-0" id="uploadProgressBar"></div>
+</div>
+</div>
+<button class="w-full py-3.5 px-space-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-lg shadow-md flex items-center justify-center gap-space-sm active:scale-[0.99] transition-all" id="uploadSubmitBtn" onclick="runUploadSimulation()" type="button">
+<span class="material-symbols-outlined text-[20px]">system_update_alt</span>
+<span>Select File &amp; Upload</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Export Identity & Privilege Datasets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">ios_share</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-hud-metric">EXTRACT &amp; RECONCILE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Export Identity &amp; Privilege Datasets</h2>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container text-primary font-label-sm text-label-sm font-semibold rounded font-hud-metric">SEC_EXP_READY</span>
+</div>
+<!-- Dataset Scope Selector -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold" for="exportDatasetSelector">Select Target Dataset Segment</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-primary font-body-md text-body-md p-space-md pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="exportDatasetSelector">
+<option value="complete_student">Complete Student Master (Active + Graduating)</option>
+<option value="complete_faculty">Complete Faculty Master (Teaching + Non-Teaching)</option>
+<option value="active_ids">Active ID Cards Only (Valid Semester Clearance)</option>
+<option value="flagged_suspended">Flagged / Suspended Cards (Security Blacklist)</option>
+<option value="hostel_resident">Hostel Residents Gate Authority Matrix</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Format Choice Buttons -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Select Output Packaging Format</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="formatToggleGroup">
+<button class="format-choice-btn flex flex-col p-space-md rounded-lg bg-primary text-on-primary shadow-sm text-left transition-all" onclick="selectExportFormat(this, 'CSV')" type="button">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-[20px]">table_rows</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold">CSV Format</span>
+<span class="font-label-sm text-label-sm opacity-80 font-hud-metric">Standard RFC 4180</span>
+</button>
+<button class="format-choice-btn flex flex-col p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-primary shadow-sm text-left transition-all" onclick="selectExportFormat(this, 'XLSX')" type="button">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-[20px]">grid_on</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-md text-label-md font-bold">Excel (.xlsx)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">Formulas &amp; Styles</span>
+</button>
+<button class="format-choice-btn flex flex-col p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-primary shadow-sm text-left transition-all" onclick="selectExportFormat(this, 'SQL_GZ')" type="button">
+<div class="flex items-center justify-between mb-2">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-md text-label-md font-bold">Encrypted Backup</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">.sql.gz (PG Dump)</span>
+</button>
+</div>
+</div>
+<!-- Security Metadata Check Notice -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">shield_lock</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Access Audit Compliance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Every exported batch is stamped with your Security Marshal Certificate (#MARSHAL-KR-2400) and stored in the persistent access ledger.
+              </p>
+</div>
+</div>
+</div>
+<!-- Export Action CTA -->
+<div class="mt-space-xl">
+<div class="hidden mb-space-sm p-space-sm bg-surface-container-highest rounded-lg text-primary font-label-sm text-label-sm font-hud-metric flex items-center justify-between" id="exportStatusBadge">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span id="exportStatusMessage">Dataset compiled successfully. (1.8 MB)</span>
+</span>
+<span class="text-on-surface-variant font-mono">HASH: 3c9b78</span>
+</div>
+<button class="w-full py-3.5 px-space-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-lg shadow-md flex items-center justify-center gap-space-sm active:scale-[0.99] transition-all" id="exportSubmitBtn" onclick="runExportSimulation()" type="button">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span id="exportBtnLabel">Generate &amp; Download Export</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Search & Row Management Preview Matrix -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-hud-metric font-bold">LIVE REPOSITORY BROWSER</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Database Quick Record Management &amp; Barcode Re-issue</h2>
+</div>
+<!-- Search Bar with Live Listener Pill -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[280px] sm:min-w-[340px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-24 py-2 bg-surface-container-low text-primary font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="recordFilterInput" onkeyup="filterRecordsTable()" placeholder="Search by Name, Roll / Staff ID, or Barcode..." type="text"/>
+<div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 bg-surface px-2 py-0.5 rounded text-secondary font-hud-metric text-label-sm shadow-sm pointer-events-none">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span>LISTENER</span>
+</div>
+</div>
+<button class="px-space-md py-2 bg-surface-container hover:bg-surface-container-high rounded-lg text-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" onclick="resetRecordFilters()" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_alt_off</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Quick Preview Table -->
+<div class="w-full overflow-x-auto rounded-lg shadow-inner bg-surface-container-low">
+<table class="w-full text-left border-collapse" id="recordsTable">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Subject &amp; Affiliation</th>
+<th class="py-3 px-space-md font-semibold font-hud-metric">ID / Roll No.</th>
+<th class="py-3 px-space-md font-semibold">Department &amp; Batch</th>
+<th class="py-3 px-space-md font-semibold font-hud-metric">Assigned Barcode Hash</th>
+<th class="py-3 px-space-md font-semibold">Access Privilege</th>
+<th class="py-3 px-space-md font-semibold">Card State</th>
+<th class="py-3 px-space-md font-semibold text-right">Quick Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface bg-surface-container-lowest">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
+                    AK
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Ananya K. Menon</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">TYPE: STUDENT_REGULAR</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">ASIET-CS-2022-041</td>
+<td class="py-3 px-space-md">Computer Science &amp; Eng. (S6)</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-hud-metric text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">barcode</span>
+<span>*ASI-88349210*</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">24/7 Hostel + Academic</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>ACTIVE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="reissueBarcodePrompt('ASIET-CS-2022-041', 'Ananya K. Menon')" title="Re-issue Barcode" type="button">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="editRecordPrompt('ASIET-CS-2022-041')" title="Edit Record Properties" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
+                    RN
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Dr. Ramesh Narayanan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">TYPE: FACULTY_PROFESSOR</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">ASIET-FAC-ECE-012</td>
+<td class="py-3 px-space-md">Dept of Electronics &amp; Comm.</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-hud-metric text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">barcode</span>
+<span>*ASI-10938442*</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">Priority VIP + Labs + Gates</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>ACTIVE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="reissueBarcodePrompt('ASIET-FAC-ECE-012', 'Dr. Ramesh Narayanan')" title="Re-issue Barcode" type="button">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="editRecordPrompt('ASIET-FAC-ECE-012')" title="Edit Record Properties" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
+                    SV
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Siddharth V. Pillai</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">TYPE: STUDENT_DAY_SCHOLAR</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">ASIET-ME-2023-118</td>
+<td class="py-3 px-space-md">Mechanical Engineering (S4)</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-hud-metric text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">barcode</span>
+<span>*ASI-77319024*</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Perimeter Only (07:30 - 18:30)</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>SUSPENDED</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="reissueBarcodePrompt('ASIET-ME-2023-118', 'Siddharth V. Pillai')" title="Re-issue Barcode" type="button">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="editRecordPrompt('ASIET-ME-2023-118')" title="Edit Record Properties" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
+                    LM
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Lakshmi Mohan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">TYPE: STAFF_LAB_INSTRUCTOR</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">ASIET-STF-EEE-005</td>
+<td class="py-3 px-space-md">Electrical &amp; Electronics Labs</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-hud-metric text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">barcode</span>
+<span>*ASI-66291048*</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Campus + Lab Complex</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>ACTIVE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="reissueBarcodePrompt('ASIET-STF-EEE-005', 'Lakshmi Mohan')" title="Re-issue Barcode" type="button">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-primary transition-colors" onclick="editRecordPrompt('ASIET-STF-EEE-005')" title="Edit Record Properties" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quick Table Footer Metrics -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">
+          DISPLAYING 4 PREVIEW SAMPLES FROM 3,830 CONSOLIDATED PROFILES
+        </span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 bg-surface text-primary hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm font-semibold transition-colors shadow-sm" onclick="alert('Navigating to comprehensive table view...')" type="button">
+            Launch Full Repository Viewer
+          </button>
+</div>
+</div>
+</div>
+<!-- Database Overview & Audit Activity Stream -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- System Integration Status Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">dns</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-hud-metric font-bold">REPLICATION TOPOLOGY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">ASIET ERP &amp; KTU University Portal Sync</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Continuous bidirectional data mirror ensures semester registrations, academic suspensions, and leave permissions automatically update gate turnstile turnouts.
+          </p>
+<!-- Integration Nodes Status -->
+<div class="flex flex-col gap-space-sm mt-space-lg">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg font-label-sm text-label-sm">
+<span class="text-on-surface-variant">KTU e-Gov API Gateway</span>
+<span class="font-hud-metric text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>ONLINE (18ms)</span>
+</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Campus Identity Server (LDAP)</span>
+<span class="font-hud-metric text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>SYNCED</span>
+</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Local Gatekeeper Offline Cache</span>
+<span class="font-hud-metric text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>100% REPLICATED</span>
+</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">AUTOMATED CRON: HOURLY</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">NEXT SYNC: IN 48 MIN</span>
+</div>
+</div>
+<!-- Recent Import/Export Activity Audit Log Table -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">history</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Recent Import/Export Activity Audit Log</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">LOG_LEVEL: AUDIT_COMPLIANT</span>
+</div>
+<!-- Activity Audit Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Dataset Identifier / File</th>
+<th class="py-2.5 px-space-md font-semibold">Triggered By</th>
+<th class="py-2.5 px-space-md font-semibold font-hud-metric">Record Delta</th>
+<th class="py-2.5 px-space-md font-semibold">Timestamp</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Verification Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Audit Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md font-semibold text-primary font-hud-metric">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_present</span>
+<span>student_admissions_batch_2024.xlsx</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Imported by Admin (K. Rajesh)</span>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">
+                    +720 records added
+                  </td>
+<td class="py-3 px-space-md font-hud-metric text-label-sm text-on-surface-variant">
+                    Oct 20, 2024 • 11:24 AM
+                  </td>
+<td class="py-3 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Success</span>
+</span>
+</td>
+</tr>
+<!-- Audit Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md font-semibold text-primary font-hud-metric">
+<span class="material-symbols-outlined text-[16px] text-secondary">description</span>
+<span>faculty_roster_term_odd.csv</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Imported by HR (D. Varma)</span>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">
+                    14 records updated
+                  </td>
+<td class="py-3 px-space-md font-hud-metric text-label-sm text-on-surface-variant">
+                    Oct 18, 2024 • 04:12 PM
+                  </td>
+<td class="py-3 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Success</span>
+</span>
+</td>
+</tr>
+<!-- Audit Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md font-semibold text-primary font-hud-metric">
+<span class="material-symbols-outlined text-[16px] text-primary">file_download</span>
+<span>campus_master_export_q3.csv</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exported by Security Chief</span>
+</td>
+<td class="py-3 px-space-md font-hud-metric font-semibold text-primary">
+                    3,820 records
+                  </td>
+<td class="py-3 px-space-md font-hud-metric text-label-sm text-on-surface-variant">
+                    Oct 15, 2024 • 09:05 AM
+                  </td>
+<td class="py-3 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">download_done</span>
+<span>Downloaded</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>ASIET Campus Security System • Immutable Ledger Verified</span>
+<button class="text-primary hover:text-secondary font-semibold transition-colors flex items-center gap-1" onclick="alert('Fetching complete system audit ledger...')" type="button">
+<span>View Full 90-Day Audit Trail</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Re-issue Barcode Modal Dialog (Controlled via JS) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary-container/40 backdrop-blur-sm" id="barcodeReissueModal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-2xl p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Re-issue Physical Barcode</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">CREDENTIAL RE-KEYING ENGINE</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded" onclick="closeBarcodeModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Subject Name:</span>
+<span class="text-primary font-bold" id="modalSubjectName">Ananya K. Menon</span>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Roll / Staff ID:</span>
+<span class="text-primary font-hud-metric font-bold" id="modalSubjectId">ASIET-CS-2022-041</span>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Current Barcode Hash:</span>
+<span class="text-on-surface-variant font-hud-metric" id="modalCurrentHash">*ASI-88349210*</span>
+</div>
+</div>
+<!-- Preview Mock of Re-generated Barcode -->
+<div class="p-space-lg bg-surface flex flex-col items-center justify-center rounded-lg shadow-inner">
+<svg class="w-64 h-16 text-primary" fill="currentColor" viewbox="0 0 200 40">
+<rect height="40" width="3" x="0" y="0"></rect>
+<rect height="40" width="1" x="5" y="0"></rect>
+<rect height="40" width="4" x="8" y="0"></rect>
+<rect height="40" width="2" x="14" y="0"></rect>
+<rect height="40" width="5" x="18" y="0"></rect>
+<rect height="40" width="1" x="25" y="0"></rect>
+<rect height="40" width="3" x="28" y="0"></rect>
+<rect height="40" width="2" x="33" y="0"></rect>
+<rect height="40" width="6" x="37" y="0"></rect>
+<rect height="40" width="2" x="45" y="0"></rect>
+<rect height="40" width="1" x="49" y="0"></rect>
+<rect height="40" width="4" x="52" y="0"></rect>
+<rect height="40" width="3" x="58" y="0"></rect>
+<rect height="40" width="2" x="63" y="0"></rect>
+<rect height="40" width="5" x="67" y="0"></rect>
+<rect height="40" width="2" x="74" y="0"></rect>
+<rect height="40" width="1" x="78" y="0"></rect>
+<rect height="40" width="4" x="81" y="0"></rect>
+<rect height="40" width="3" x="87" y="0"></rect>
+<rect height="40" width="2" x="92" y="0"></rect>
+<rect height="40" width="6" x="96" y="0"></rect>
+<rect height="40" width="1" x="104" y="0"></rect>
+<rect height="40" width="4" x="107" y="0"></rect>
+<rect height="40" width="2" x="113" y="0"></rect>
+<rect height="40" width="3" x="117" y="0"></rect>
+<rect height="40" width="5" x="122" y="0"></rect>
+<rect height="40" width="2" x="129" y="0"></rect>
+<rect height="40" width="1" x="133" y="0"></rect>
+<rect height="40" width="4" x="136" y="0"></rect>
+<rect height="40" width="3" x="142" y="0"></rect>
+<rect height="40" width="2" x="147" y="0"></rect>
+<rect height="40" width="6" x="151" y="0"></rect>
+<rect height="40" width="2" x="159" y="0"></rect>
+<rect height="40" width="1" x="163" y="0"></rect>
+<rect height="40" width="4" x="166" y="0"></rect>
+<rect height="40" width="3" x="172" y="0"></rect>
+<rect height="40" width="2" x="177" y="0"></rect>
+<rect height="40" width="5" x="181" y="0"></rect>
+<rect height="40" width="2" x="188" y="0"></rect>
+<rect height="40" width="1" x="192" y="0"></rect>
+<rect height="40" width="4" x="195" y="0"></rect>
+</svg>
+<span class="mt-2 font-hud-metric text-label-md font-bold tracking-widest text-primary" id="modalNewCode">*ASI-90412853-NEW*</span>
+<span class="text-[10px] text-on-surface-variant font-hud-metric">CODE 128 ENCRYPTION FORMAT</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 bg-surface text-primary hover:bg-surface-container rounded-lg font-label-md text-label-md font-semibold transition-colors" onclick="closeBarcodeModal()" type="button">
+          Cancel
+        </button>
+<button class="px-space-lg py-2 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold transition-colors flex items-center gap-1 shadow-sm" onclick="commitBarcodeReissue()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Invalidate Old &amp; Print Card Tag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // UI Interactive States & Logic
+  let activeTab = 'student';
+  let activeExportFormat = 'CSV';
+
+  function switchDbTab(tabName) {
+    activeTab = tabName;
+    const studentBtn = document.getElementById('tabStudentBtn');
+    const facultyBtn = document.getElementById('tabFacultyBtn');
+
+    if (tabName === 'student') {
+      studentBtn.className = 'flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md font-bold transition-all';
+      facultyBtn.className = 'flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-label-md text-label-md font-semibold';
+      document.getElementById('exportDatasetSelector').value = 'complete_student';
+    } else {
+      facultyBtn.className = 'flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md font-bold transition-all';
+      studentBtn.className = 'flex-1 sm:flex-initial flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-label-md text-label-md font-semibold';
+      document.getElementById('exportDatasetSelector').value = 'complete_faculty';
+    }
+  }
+
+  function handleFileSelect(e) {
+    const file = e.target.files[0];
+    if (file) {
+      document.getElementById('fileSelectionPill').classList.remove('hidden');
+      document.getElementById('fileSelectionPill').classList.add('flex');
+      document.getElementById('selectedFileName').innerText = file.name;
+      document.getElementById('selectedFileSize').innerText = (file.size / 1024).toFixed(1) + ' KB';
+    }
+  }
+
+  function selectExportFormat(buttonEl, formatCode) {
+    activeExportFormat = formatCode;
+    const buttons = document.querySelectorAll('.format-choice-btn');
+    buttons.forEach(btn => {
+      btn.className = 'format-choice-btn flex flex-col p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-primary shadow-sm text-left transition-all';
+      const indicator = btn.querySelector('.rounded-full');
+      if (indicator) indicator.className = 'w-2 h-2 rounded-full bg-outline-variant';
+    });
+
+    buttonEl.className = 'format-choice-btn flex flex-col p-space-md rounded-lg bg-primary text-on-primary shadow-sm text-left transition-all';
+    const activeIndicator = buttonEl.querySelector('.rounded-full');
+    if (activeIndicator) activeIndicator.className = 'w-2 h-2 rounded-full bg-secondary';
+  }
+
+  function runUploadSimulation() {
+    const progressSection = document.getElementById('uploadProgressSection');
+    const progressBar = document.getElementById('uploadProgressBar');
+    const statusText = document.getElementById('uploadStatusText');
+    const percentText = document.getElementById('uploadPercentText');
+    const submitBtn = document.getElementById('uploadSubmitBtn');
+
+    progressSection.classList.remove('hidden');
+    progressSection.classList.add('flex');
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-70');
+
+    let currentProgress = 0;
+    const interval = setInterval(() => {
+      currentProgress += 15;
+      if (currentProgress > 100) currentProgress = 100;
+      
+      progressBar.style.width = currentProgress + '%';
+      percentText.innerText = currentProgress + '%';
+
+      if (currentProgress === 30) {
+        statusText.innerText = 'Validating schema headers & KTU hashes...';
+      } else if (currentProgress === 60) {
+        statusText.innerText = 'Auto-generating Code-128 Barcodes...';
+      } else if (currentProgress === 90) {
+        statusText.innerText = 'Committing identity records to local replication cache...';
+      } else if (currentProgress === 100) {
+        clearInterval(interval);
+        statusText.innerText = 'Import Complete: 142 records ingested successfully!';
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-70');
+          alert('Database Ingest Verified: 142 records successfully synced with Gate 01 Turnstile controller.');
+          progressSection.classList.add('hidden');
+          progressSection.classList.remove('flex');
+          progressBar.style.width = '0%';
+        }, 1200);
+      }
+    }, 280);
+  }
+
+  function runExportSimulation() {
+    const exportBtn = document.getElementById('exportSubmitBtn');
+    const label = document.getElementById('exportBtnLabel');
+    const statusBadge = document.getElementById('exportStatusBadge');
+    const dataset = document.getElementById('exportDatasetSelector').value;
+
+    label.innerText = 'Compiling Cryptographic Dataset...';
+    exportBtn.disabled = true;
+
+    setTimeout(() => {
+      label.innerText = 'Generate & Download Export';
+      exportBtn.disabled = false;
+      statusBadge.classList.remove('hidden');
+      document.getElementById('exportStatusMessage').innerText = `Dataset [${dataset}] compiled in ${activeExportFormat} format. Download initiated.`;
+
+      // Trigger dummy file download simulation
+      simulateDownload(`asiet_${dataset}_export.${activeExportFormat.toLowerCase()}`);
+    }, 1200);
+  }
+
+  function simulateDownload(filename) {
+    const dummyBlob = new Blob(["ASIET IDENTITY RECORD REPOSITORY EXPORT - OFFICIAL SYSTEM LOG\nID,NAME,TYPE,DEPT,BARCODE\nASIET-001,Ananya Menon,STUDENT,CSE,*ASI-88349210*"], { type: "text/plain;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(dummyBlob);
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  function triggerManualSync() {
+    const btn = document.getElementById('forceSyncBtn');
+    btn.classList.add('animate-spin');
+    setTimeout(() => {
+      btn.classList.remove('animate-spin');
+      alert('KTU Gateway & ASIET Central SIS sync complete. All local gate cache tables are up to date.');
+    }, 1400);
+  }
+
+  function filterRecordsTable() {
+    const input = document.getElementById('recordFilterInput').value.toLowerCase();
+    const rows = document.querySelectorAll('#recordsTable tbody tr');
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(input) ? '' : 'none';
+    });
+  }
+
+  function resetRecordFilters() {
+    document.getElementById('recordFilterInput').value = '';
+    filterRecordsTable();
+  }
+
+  function reissueBarcodePrompt(rollId, name) {
+    document.getElementById('modalSubjectName').innerText = name;
+    document.getElementById('modalSubjectId').innerText = rollId;
+    document.getElementById('modalCurrentHash').innerText = `*ASI-${Math.floor(10000000 + Math.random() * 90000000)}*`;
+    document.getElementById('modalNewCode').innerText = `*ASI-${Math.floor(10000000 + Math.random() * 90000000)}-REISSUED*`;
+    document.getElementById('barcodeReissueModal').classList.remove('hidden');
+  }
+
+  function closeBarcodeModal() {
+    document.getElementById('barcodeReissueModal').classList.add('hidden');
+  }
+
+  function commitBarcodeReissue() {
+    const id = document.getElementById('modalSubjectId').innerText;
+    closeBarcodeModal();
+    alert(`Barcode regenerated for ${id}. Old barcode tag has been immediately invalidated across all campus checkpoints.`);
+  }
+
+  function editRecordPrompt(rollId) {
+    alert(`Opening detailed institutional privileges modifier for ${rollId}...`);
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-auto py-space-md"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Adi Shankara Institute of Engineering &amp; Technology (ASIET) • Department of Campus Safety</span><span class="hidden sm:inline font-label-sm text-label-sm text-outline">•</span><span class="font-label-sm text-label-sm text-on-surface-variant font-hud-metric">SYS_VER: 4.8.2-PROD</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-error">emergency</span><span>Security Desk Helpline: <strong class="font-hud-metric text-on-surface">Ext 2400 / +91 (484) 246-3825</strong></span></div><button class="flex items-center gap-space-xs px-space-sm py-1 bg-error-container text-on-error-container rounded text-label-sm font-label-sm hover:bg-error hover:text-on-error transition-colors" type="button"><span class="material-symbols-outlined text-[14px]">call</span><span>Intercom Link</span></button></div></div></footer></body></html>

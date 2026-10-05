@@ -1,0 +1,16 @@
+
+    @keyframes laserSweep {
+      0%, 100% { transform: translateY(0%); opacity: 0.85; }
+      50% { transform: translateY(180px); opacity: 1; }
+    }
+    .animate-laser {
+      animation: laserSweep 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    .animate-radar {
+      animation: pulseGlow 1.8s ease-in-out infinite;
+    }
+  

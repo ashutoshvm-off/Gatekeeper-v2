@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+test-results/
+*.log
+
+*.sqlite
+*.sqlite-*
+.runtime/
+.local-data/
+.env.local
+
+.env.server
