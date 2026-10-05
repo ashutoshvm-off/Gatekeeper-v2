@@ -11,3 +11,9 @@ test-results/
 .env.local
 
 .env.server
+
+# Keep all secret environment variants out of version control.
+.env
+.env.*
+!.env.server.example
+!.env.demo

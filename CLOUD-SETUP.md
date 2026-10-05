@@ -115,3 +115,11 @@ Imported history is stored in Turso alongside current scans and is included in t
 Run start-cloud.bat to launch the API and Vite as background processes. You can close the launcher window afterward. Run stop-cloud.bat to stop this background launch before setup.bat. Re-running the launcher while the website is healthy reuses it. Diagnostics are in .runtime/cloud-output.log and .runtime/cloud-errors.log.
 
 npm run dev remains available for terminal development; keep that terminal open. Neither cloud launcher installs Windows boot tasks. After a reboot, run the cloud launcher again, or complete setup.bat when you are ready for the local installation with automatic startup. Server restarts end existing sign-in sessions; sign in again to resume.
+
+## Clearing data and completing the local handover
+
+Administration → Database maintenance → Clear database requires a paused checkpoint, drained queues, the exact confirmation phrase and the administrator password. This clears members and history in the currently connected database, retains login/installation settings, and leaves the checkpoint paused. SQLite creates a backup first; manual cloud clearing is permanent. All users sign in again afterward.
+
+On local setup, Turso cleanup now follows the verified transfer: a local backup is checked against the transfer checksums, then the unchanged cloud dataset is cleared transactionally. Minimal migration metadata remains; writes to that retired cloud dataset are blocked. Cloud account/token settings are not deleted. If cleanup fails, the local website still runs offline and shows a pending cleanup report. Rerun setup.bat with internet to retry; if cloud data changed after transfer, newer records must be reconciled before deletion. Do not continue using cloud scanners after handover.
+
+Rapid taps continue to use the persistent IndexedDB queue. Local processing does not require internet. Taps are removed only after database confirmation; unavailable storage shows an unsaved-tap warning.

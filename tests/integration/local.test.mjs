@@ -17,7 +17,7 @@ test('fullscreen-profile queue survives browser restart, lost response, and rapi
   const url=`http://127.0.0.1:${server.address().port}`;
   let context;
   const open=async()=>chromium.launchPersistentContext(join(dir,'profile'),{channel:'chrome',headless:true,viewport:{width:1440,height:1000}});
-  const login=async(page)=>{await page.goto(url);await page.getByLabel('Terminal password',{exact:true}).fill('guard-test-password');await page.getByRole('button',{name:'Open checkpoint',exact:true}).click();await expect(page.getByRole('heading',{name:'Identity verification'})).toBeVisible();};
+  const login=async(page)=>{const restored=page.waitForResponse(r=>r.url().endsWith('/api/session'));await page.goto(url);if(!(await (await restored).json())){await page.getByLabel('Terminal password',{exact:true}).fill('guard-test-password');await page.getByRole('button',{name:'Open checkpoint',exact:true}).click();}await expect(page.getByRole('heading',{name:'Identity verification'})).toBeVisible();};
   const inputTaps=async(page,count)=>{
     // Dispatch keyboard-wedge submissions in one browser task, without waiting
     // for React renders, network requests, or database responses between taps.

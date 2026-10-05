@@ -157,3 +157,11 @@ The original browser suite expects `npm run dev:demo` on port 5173.
 
 Installer/task registration and an actual Windows reboot must be verified on the
 deployment computer; automated tests do not reboot or change Windows startup.
+
+## Clearing data and completing the local handover
+
+Administration → Database maintenance → Clear database requires a paused checkpoint, drained queues, the exact confirmation phrase and the administrator password. This clears members and history in the currently connected database, retains login/installation settings, and leaves the checkpoint paused. SQLite creates a backup first; manual cloud clearing is permanent. All users sign in again afterward.
+
+On local setup, Turso cleanup now follows the verified transfer: a local backup is checked against the transfer checksums, then the unchanged cloud dataset is cleared transactionally. Minimal migration metadata remains; writes to that retired cloud dataset are blocked. Cloud account/token settings are not deleted. If cleanup fails, the local website still runs offline and shows a pending cleanup report. Rerun setup.bat with internet to retry; if cloud data changed after transfer, newer records must be reconciled before deletion. Do not continue using cloud scanners after handover.
+
+Rapid taps continue to use the persistent IndexedDB queue. Local processing does not require internet. Taps are removed only after database confirmation; unavailable storage shows an unsaved-tap warning.

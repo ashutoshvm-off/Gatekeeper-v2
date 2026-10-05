@@ -1,5 +1,6 @@
 import {readFileSync} from 'node:fs';
 import {randomUUID} from 'node:crypto';
+import {retirementGuards,clearCloudDatabase} from './cloud-maintenance.mjs';
 import {normalizeRecords} from '../src/domain.js';
 import {memberDeletion,checkedInMessage} from './member-delete.mjs';
 import {historyStatements,historyOrder} from './history-import.mjs';
@@ -9,7 +10,7 @@ const revisions=readFileSync(new URL('./cloud-revision.sql',import.meta.url),'ut
 export class CloudStore {
   constructor(client){this.client=client;this.engine='Turso';}
   async ready(){
-    if(!this.initializing)this.initializing=(async()=>{await this.client.executeMultiple(schema);await this.client.executeMultiple(triggers);await this.client.executeMultiple(revisions);})().catch(error=>{this.initializing=null;throw error;});
+    if(!this.initializing)this.initializing=(async()=>{await this.client.executeMultiple(schema);await this.client.executeMultiple(triggers);await this.client.executeMultiple(revisions);await this.client.executeMultiple(retirementGuards);})().catch(error=>{this.initializing=null;throw error;});
     await this.initializing;
   }
   async execute(sql,args=[]){await this.ready();return this.client.execute({sql,args});}
@@ -74,20 +75,9 @@ export class CloudStore {
     await this.client.batch([{sql:"UPDATE settings SET value=? WHERE key='locked'",args:[String(locked)]},{sql:'INSERT INTO incidents VALUES(?,?)',args:[row.key,JSON.stringify(row)]}],'write');return {locked};
   }
   async status(){await this.execute('SELECT 1');return {server:{status:'online'},database:{status:'connected',engine:'Turso'},storage:null};}
-  async clearAll(actor){
-    await this.ready();
-    const row={key:randomUUID(),id:'SYSTEM',reason:`${actor} cleared all data from the database`,time:new Date().toISOString()};
-    await this.client.batch([
-      {sql:'DELETE FROM scan_inbox',args:[]},
-      {sql:'DELETE FROM members',args:[]},
-      {sql:'DELETE FROM events',args:[]},
-      {sql:'DELETE FROM visits',args:[]},
-      {sql:'DELETE FROM incidents',args:[]},
-      {sql:"UPDATE settings SET value='false' WHERE key='locked'",args:[]},
-      {sql:'INSERT INTO incidents VALUES(?,?)',args:[row.key,JSON.stringify(row)]}
-    ],'write');
-    return {cleared:true};
-  }
+  async isRetired(){return !!(await this.execute("SELECT value FROM settings WHERE key='cloud_retired'")).rows.length;}
+  async databaseSummary(){const result=await this.execute('SELECT (SELECT COUNT(*) FROM members) members,(SELECT COUNT(*) FROM events) events,(SELECT COUNT(*) FROM visits) visits,(SELECT COUNT(*) FROM incidents) incidents');return {...result.rows[0],retired:await this.isRetired()};}
+  async clearDatabase(options){await this.ready();return clearCloudDatabase(this.client,options);}
   async backup(){throw Error('Use the Turso dashboard/CLI to back up the cloud database. Local backup applies only to SQLite installations.');}
   close(){this.client.close();}
 }

@@ -122,18 +122,21 @@ ${schema}`);
     const databaseBytes=[this.path,this.path+'-wal'].reduce((sum,p)=>{try{return sum+statSync(p).size;}catch{return sum;}},0);
     const completed=this.db.prepare("SELECT value FROM settings WHERE key='cloud_transfer'").get();
     const report=completed?JSON.parse(completed.value):null;
-    const transfer=report?{completedAt:report.completedAt,source:report.source,counts:Object.fromEntries(Object.entries(report.tables).map(([table,value])=>[table,value.count]))}:null;
+    const transfer=report?{completedAt:report.completedAt,source:report.source,cleanup:report.cleanup?{status:report.cleanup.status,completedAt:report.cleanup.completedAt,lastError:report.cleanup.lastError}:null,counts:Object.fromEntries(Object.entries(report.tables).map(([table,value])=>[table,value.count]))}:null;
     return {server:{status:'online'},database:{status:'connected',engine:'SQLite',bytes:databaseBytes},storage,transfer};
   }
-  clearAll(actor) {
+  databaseSummary(){return {...this.db.prepare('SELECT (SELECT COUNT(*) FROM members) members,(SELECT COUNT(*) FROM events) events,(SELECT COUNT(*) FROM visits) visits,(SELECT COUNT(*) FROM incidents) incidents').get(),retired:false};}
+  async clearDatabase({actor,operationId}){
+    const prior=this.db.prepare("SELECT value FROM settings WHERE key='last_database_clear'").get();
+    if(prior&&JSON.parse(prior.value).operationId===operationId)return JSON.parse(prior.value);
+    if(!this.locked)throw Error('Pause the checkpoint and finish all pending queues before clearing the database.');
+    const backupPath=await this.backup();
     return this.transaction(()=>{
-      this.db.exec('DELETE FROM members');
-      this.db.exec('DELETE FROM events');
-      this.db.exec('DELETE FROM visits');
-      this.db.exec('DELETE FROM incidents');
-      this.db.prepare("UPDATE settings SET value='false' WHERE key='locked'").run();
-      this.incident('SYSTEM',`${actor} cleared all data from the database`);
-      return {cleared:true};
+      if(!this.locked)throw Error('Checkpoint resumed during backup. Nothing was cleared.');
+      this.db.exec('DELETE FROM visits; DELETE FROM events; DELETE FROM members; DELETE FROM incidents;');
+      const report={cleared:true,actor,operationId,completedAt:new Date().toISOString(),backupPath};
+      this.db.prepare("INSERT INTO settings(key,value) VALUES('last_database_clear',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").run(JSON.stringify(report));
+      return report;
     });
   }
   async backup() {

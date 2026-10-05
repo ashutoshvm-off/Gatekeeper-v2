@@ -118,13 +118,17 @@ export function LocalProvider({children,Context}){
   }
   async function backupDatabase(){try{const data=await api('/backup',{});setNotice('Backup created: '+data.path);}catch(e){setNotice('Backup failed: '+e.message);}}
   async function downloadQueue(){try{downloadFile(JSON.stringify(await exportPending(),null,2),'gatekeeper-pending-scans.json','application/json');}catch(e){setNotice(e.message);}}
-  async function clearAllData(){
-    try{await api('/clear-all',{});setRecords([]);setIncidents([]);updateLocked(false);await refresh();setNotice('All data cleared from the database. A backup was created automatically.');}catch(e){setNotice('Clear failed: '+e.message);}
+  async function clearDatabase(options){
+    if(unsavedRef.current.length||await pendingCount())throw Error('Finish this browser queue before clearing.');
+    const result=await api('/database/clear',options);
+    setUser(null);setRecords([]);setIncidents([]);setResult(null);updateLocked(true);
+    setNotice('Database cleared. Sign in again. '+(result.backupPath?'Backup: '+result.backupPath:'Cloud data was permanently removed.'));
+    return result;
   }
   async function migrateBrowserMembers(){
     try{const rows=JSON.parse(localStorage.getItem('gatekeeper-records-v1')||'[]');if(!rows.length)throw Error('No legacy members in this browser profile/origin. Import your exported registry file instead.');
       for(let i=0;i<rows.length;i+=500)await api('/members',{rows:rows.slice(i,i+500),overwrite:false});await refresh();setNotice('Browser members copied. Existing database members and browser data preserved.');
     }catch(e){setNotice(e.message);}
   }
-  return <Context.Provider value={{local:true,connection,cloud:connection.mode==='cloud',records,logs:[],incidents,session,setSession,login,notice,setNotice,result,setResult,scan,saveRecord,deleteRecord,updateRecord,importFile,download,flag,locked,setLocked,queue,retryQueue:()=>pumpRef.current(),retryUnsaved,downloadQueue,backupDatabase,migrateBrowserMembers,clearAllData,revision,exportVisits}}>{children}</Context.Provider>;
+  return <Context.Provider value={{local:true,connection,cloud:connection.mode==='cloud',records,logs:[],incidents,session,setSession,login,notice,setNotice,result,setResult,scan,saveRecord,deleteRecord,updateRecord,importFile,download,flag,locked,setLocked,queue,retryQueue:()=>pumpRef.current(),retryUnsaved,downloadQueue,backupDatabase,migrateBrowserMembers,clearDatabase,revision,exportVisits}}>{children}</Context.Provider>;
 }

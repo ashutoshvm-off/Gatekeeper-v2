@@ -4,6 +4,7 @@ import {join,resolve,extname,sep} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {randomBytes} from 'node:crypto';
 import {loadRuntime} from './runtime.mjs';
+import {isPrivateRequest} from './browser-safety.mjs';
 import {verifyPassword} from './config.mjs';
 const root=resolve(fileURLToPath(new URL('../dist',import.meta.url)));
 const json=(res,status,value)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(value));};
@@ -16,6 +17,7 @@ export function createApp({store,config}) {
     try {
       const host=req.headers.host||'';
       if(!/^127\.0\.0\.1:\d+$/.test(host))return json(res,403,{error:'Use the local 127.0.0.1 address.'});
+      if(isPrivateRequest(req.url))return json(res,403,{error:'Private server file.'});
       const url=new URL(req.url,`http://${host}`),path=url.pathname;
       if(path.startsWith('/api/')){
         if(req.headers.origin&&req.headers.origin!==`http://${host}`&&req.headers.origin!=='http://127.0.0.1:5173')return json(res,403,{error:'Untrusted origin.'});
@@ -31,6 +33,7 @@ export function createApp({store,config}) {
         if(session&&session.expires<Date.now()){sessions.delete(token);}
         const user=session&&session.expires>Date.now()?session.user:null;
         if(path==='/api/login'&&req.method==='POST'){
+          if(await store.isRetired?.())return json(res,409,{error:'Turso was cleared after a verified local transfer. Use the installed local website.'});
           if(!config.users.length)return json(res,503,{error:store.message||'Complete cloud configuration first.'});
           const now=Date.now(),rate=attempts.get('local')||{count:0,until:now+60000};
           if(rate.until<now){rate.count=0;rate.until=now+60000;}attempts.set('local',rate);
@@ -61,7 +64,14 @@ export function createApp({store,config}) {
         }
         if(path==='/api/incidents'&&req.method==='GET')return json(res,200,await store.incidents());
         if(path==='/api/checkpoint'&&req.method==='POST'){const data=await body(req);if(typeof data.locked!=='boolean')throw Error('Invalid checkpoint state.');return json(res,200,await store.setCheckpoint(data.locked,user.id));}
-        if(path==='/api/clear-all'&&req.method==='POST'){try{await store.backup();}catch{}const result=await store.clearAll(user.id);return json(res,200,result);}
+        if(path==='/api/database/summary'&&req.method==='GET')return json(res,200,await store.databaseSummary());
+        if(path==='/api/database/clear'&&req.method==='POST'){
+          const data=await body(req),expected=config.mode==='cloud'?'CLEAR CLOUD DATABASE':'CLEAR LOCAL DATABASE';
+          if(data.confirmation!==expected||typeof data.operationId!=='string'||!/^[a-f0-9-]{36}$/.test(data.operationId))throw Error('Enter the exact database confirmation phrase.');
+          const account=config.users.find(u=>u.id===user.id);
+          if(typeof data.password!=='string'||data.password.length>1024||!account||!verifyPassword(data.password,account.hash))return json(res,403,{error:'Administrator password is incorrect.'});
+          const result=await store.clearDatabase({actor:user.id,operationId:data.operationId});sessions.clear();return json(res,200,result);
+        }
         if(path==='/api/backup'&&req.method==='POST')return json(res,200,{path:await store.backup()});
         return json(res,404,{error:'Unknown endpoint.'});
       }
@@ -72,6 +82,7 @@ export function createApp({store,config}) {
       res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream','Cache-Control':'no-cache'});
       if(req.method==='HEAD')return res.end();createReadStream(file).pipe(res);
     }catch(error){
+      if(String(error.message).includes('Gatekeeper cloud retired'))return json(res,409,{error:'Turso was cleared after a verified local transfer. Use the installed local website. Pending taps remain on this device.'});
       if(config.mode==='cloud'&&error.code){console.error('Cloud database request failed:',String(error.code));return json(res,503,{error:'Cloud database request failed. Check the connection and server configuration. Pending taps are retained.'});}
       console.error(error.message);json(res,String(error.code||'').includes('SQLITE')?503:400,{error:String(error.code||'').includes('SQLITE')?'Database write failed. Pending scans are retained; check disk space and server logs.':error.message});
     }

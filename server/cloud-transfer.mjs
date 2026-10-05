@@ -21,6 +21,9 @@ function verifyTable(db,table,columns){
   for(const row of db.prepare(`SELECT ${columns.join(',')} FROM ${table} ORDER BY ${columns[0]}`).iterate()){hash.update(signature(row,columns));count++;}
   return {count,sha256:hash.digest('hex')};
 }
+export function verifyTransferCopy(db,report){
+  for(const table of userTables){const actual=verifyTable(db,table,tables[table]),expected=report.tables[table];if(actual.count!==expected.count||actual.sha256!==expected.sha256)throw Error('Verified local copy no longer matches the transferred '+table+'. Cloud data was retained.');}
+}
 function ensureEmpty(store){
   for(const table of userTables)if(store.db.prepare(`SELECT COUNT(*) AS n FROM ${table}`).get().n)throw Error('The local database already contains records. Automatic transfer will not overwrite them. Back up and reconcile this database before migration.');
 }

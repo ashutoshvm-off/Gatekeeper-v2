@@ -142,3 +142,9 @@
   .scanner-workspace main { display: block; }
   .scanner-workspace .scanner-panel,.scanner-workspace .verification-panel { overflow: visible; }
 }
+
+/* Keep suspicious input visible without guessing or submitting a shortened ID. */
+.scan-input-warning { padding: 10px 12px; border: 1px solid #dcb269; border-radius: 8px; background: #fff8e8; color: #644308; overflow-wrap: anywhere; }
+.scan-input-warning p { margin: 0 0 6px; font-size: 12px; line-height: 1.45; }
+.scan-input-warning small { display: block; font-size: 11px; line-height: 1.4; }
+.scan-input-warning button { margin-top: 8px; font-size: 12px; }
